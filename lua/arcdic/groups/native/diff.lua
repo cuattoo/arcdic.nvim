@@ -1,6 +1,6 @@
 -- Notes and format from folke/tokyonight.nvim @GutHub.
 
-local C = require 'nordic.colors'
+local C = require 'arcdic.colors'
 
 return {
     DiffAdd = { bg = C.diff.add, bold = true }, -- diff mode: Added line |diff.txt|

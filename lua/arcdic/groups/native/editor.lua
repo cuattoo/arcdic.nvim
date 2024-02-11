@@ -1,7 +1,7 @@
 -- Notes and format from @folke/tokyonight.nvim.
 
-local C = require 'nordic.colors'
-local O = require('nordic.config').options
+local C = require 'arcdic.colors'
+local O = require('arcdic.config').options
 
 local groups = {
     Comment = { fg = C.comment, italic = O.italic_comments }, -- any comment

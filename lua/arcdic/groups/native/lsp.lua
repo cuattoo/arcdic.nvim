@@ -1,6 +1,6 @@
 -- Notes are from @folke/tokyonight.nvim.
 
-local C = require 'nordic.colors'
+local C = require 'arcdic.colors'
 
 return {
     -- These groups are for the native LSP client. Some other LSP clients may
