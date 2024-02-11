@@ -37,16 +37,16 @@ M.native = {
 function M.get_groups()
     local groups = {}
     for _, native in ipairs(M.native) do
-        groups = merge(groups, require('nordic.groups.native.' .. native))
+        groups = merge(groups, require('arcdic.groups.native.' .. native))
     end
     for _, integration in ipairs(M.integrations) do
-        groups = merge(groups, require('nordic.groups.integrations.' .. integration))
+        groups = merge(groups, require('arcdic.groups.integrations.' .. integration))
     end
     return merge(groups, C.options.override)
 end
 
 function M.set_term_colors()
-    local colors = require 'nordic.groups.native.terminal'
+    local colors = require 'arcdic.groups.native.terminal'
     for term, col in pairs(colors) do
         vim.g[term] = col
     end
