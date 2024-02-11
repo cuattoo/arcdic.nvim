@@ -20,8 +20,8 @@ function M.load(opts)
 end
 
 -- Add command to nvim
-vim.api.nvim_create_user_command('arcdic', function(_)
-    vim.api.nvim_command 'colorscheme arcdic'
+vim.api.nvim_create_user_command('Arcdic', function(_)
+    vim.api.nvim_command 'colorscheme Arcdic'
 end, {
     nargs = 1,
 })
