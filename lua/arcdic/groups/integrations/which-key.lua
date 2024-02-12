@@ -6,7 +6,7 @@ return {
     WhichKeyFloat = { bg = C.none },
     WhichKeyDesc = { fg = C.white0 },
     WhichKeyGroup = { fg = C.orange.bright, bold = true },
-    WhichKeyBorder = { fg = C.black0, bg = C.black1 },
+    WhichKeyBorder = { fg = C.white.default, bg = C.none },
 
     -- TODO: Unsure.
     WhichKeySeperator = {},
