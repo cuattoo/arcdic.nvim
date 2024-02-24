@@ -74,8 +74,8 @@ local palette = {
         dim = '#A97EA1',
     },
     xterm = {
-        white = #eeeeee,
-        grey = #808080,
+        white = '#eeeeee',
+        grey = '#808080',
     }
 }
 
