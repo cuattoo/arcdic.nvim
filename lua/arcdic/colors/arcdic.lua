@@ -73,6 +73,10 @@ local palette = {
         bright = '#BE9DB8',
         dim = '#A97EA1',
     },
+    xterm = {
+        white = #eeeeee,
+        grey = #808080,
+    }
 }
 
 -- `white0` is used as the default fg, and has a blue tint.
