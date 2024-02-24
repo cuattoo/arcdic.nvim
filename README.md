@@ -6,16 +6,6 @@ A Neovim colorscheme based on [Nord](https://www.nordtheme.com/), but in lighter
 
 If there is anything that does not seem right, even if it is a very small highlight, please let me know with an issue or PR!
 
-# 📷 Showcase
-
-
-**From my dotfiles:**
-
-
-# 🎨 Palette
-
-
-
 # 📦 Installation
 
 With [packer.nvim](https://github.com/wbthomason/packer.nvim):
@@ -28,7 +18,7 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
-    'cuattoo/nordic.nvim',
+    'cuattoo/arcdic.nvim',
     lazy = false,
     priority = 1000,
     config = function()
