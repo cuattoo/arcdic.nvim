@@ -11,11 +11,11 @@ return {
     --- Misc
     ['@comment'] = { link = 'Comment' },
     ['@comment.documentation'] = { link = 'Comment' },
-    ['@operator'] = { fg = C.fg }, -- For any operator: `+`, but also `->` and `*` in C.
+    ['@operator'] = { fg = C.white.snow1 }, -- For any operator: `+`, but also `->` and `*` in C.
 
     --- Punctuation
     ['@punctuation.delimiter'] = { link = '@operator' }, -- For delimiters ie: `.`
-    ['@punctuation.bracket'] = { link = '@operator' }, -- For brackets and parens.
+    ['@punctuation.bracket'] = { fg = C.white.snow1 }, -- For brackets and parens.
     ['@punctuation.special'] = { link = 'Macro' }, -- For special punctutation that does not fall in the catagories before.
     ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true },
 
@@ -98,10 +98,10 @@ return {
     -- Things that seems to be missing?
     ['@text.todo'] = { link = 'Todo' },
     ['@text.note'] = { link = 'Note' },
-    ['@string.special'] = { fg = C.yellow.base }, -- For escape characters within a string.
+    ['@string.special'] = { fg = C.yellow.dim }, -- For escape characters within a string.
     ['@tag'] = { fg = C.blue1 }, -- Tags like html tag names.
     ['@tag.delimiter'] = { fg = C.fg }, -- Tag delimiter like `<` `>` `/`
-    ['@tag.attribute'] = { fg = C.yellow.base }, -- Tag attribute like `id` `class`
+    ['@tag.attribute'] = { fg = C.yellow.dim }, -- Tag attribute like `id` `class`
     ['@text'] = { link = 'Normal' }, -- For strings considered text in a markup language.
     ['@text.strong'] = { bold = true },
     ['@text.emphasis'] = { italic = true }, -- For text to be represented with emphasis.
