@@ -3,7 +3,7 @@ local C = require 'arcdic.colors'
 local arcdic = {}
 
 arcdic.normal = {
-    a = { bg = C.xterm.white, fg = C.xterm.white, gui = 'bold' },
+    a = { bg = C.xterm.white, fg = C.xterm.grey, gui = 'bold' },
     b = { bg = C.gray1, fg = C.xterm.grey },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
