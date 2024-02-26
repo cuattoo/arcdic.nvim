@@ -77,7 +77,7 @@ function C.extend_palette()
     C.git = {
         add = C.green.base,
         delete = C.red.base,
-        change = C.blue1,
+        change = C.orange.dim,
     }
 
     -- Diagnostics
