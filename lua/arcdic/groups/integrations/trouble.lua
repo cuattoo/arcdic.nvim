@@ -2,7 +2,7 @@ local C = require 'arcdic.colors'
 
 return {
 
-    TroubleNormal = { bg = C.black1 },
+    TroubleNormal = { bg = C.bg },
     TroubleText = { fg = C.fg },
 
     TroubleCount = { fg = C.white1, bg = C.gray2 },
