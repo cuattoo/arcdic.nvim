@@ -3,7 +3,7 @@ local C = require 'arcdic.colors'
 return {
 
     --NeoTreeCursorLine = { link = 'NvimTreeCursorLine' },
-    NeoTreeCursorLine = { bg = C.none , fg = C.gray5},
+    NeoTreeCursorLine = { bg = link = "NvimTreeCursorLine"},
     NeoTreeDirectoryIcon = { link = 'NvimTreeFolderIcon' },
     NeoTreeDirectoryName = { fg = C.white.snow1},
     NeoTreeRootName = { link = 'NvimTreeRootFolder' },
