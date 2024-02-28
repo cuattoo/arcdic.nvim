@@ -1,109 +1,125 @@
 local C = require 'arcdic.colors'
 
 return {
-    -- Comments
-    ['@comment'] = { fg = C.gray4 },
-
-    -- Operators
-    ['@operator'] = { fg = C.snow1 },
-
-    -- Punctuation
-    ['@punctuation.delimiter'] = { fg = C.snow1 },
-    ['@punctuation.bracket'] = { fg = C.snow1 },
-
-    -- Literals
-    ['@string.documentation'] = { fg = C.gray4 },
-    ['@string.regex'] = { fg = C.magenta.bright },
-    ['@string.escape'] = { fg = C.magenta.bright },
-
-    -- Functions
-    ['@constructor'] = { fg = C.orange.base },
-    ['@parameter'] = { fg = C.gray5, italic = true },
-
-    -- Keywords
-    ['@keyword'] = { fg = C.blue1 },
-    ['@keyword.coroutine'] = { fg = C.blue1 },
-    ['@keyword.function'] = { fg = C.blue1 },
-    ['@label'] = { fg = C.blue1 },
-
-    -- Types
-    ['@type.builtin'] = { fg = C.gray5 },
-    ['@field'] = { fg = C.gray5 },
-    ['@property'] = { fg = C.gray5 },
-
-    -- Identifiers
-    ['@variable'] = { fg = C.gray5 },
-    ['@variable.builtin'] = { fg = C.gray5 },
-
-    -- Text
-    ['@text.literal.markdown_inline'] = { bg = C.black2, fg = C.fg },
-    ['@text.todo.unchecked'] = { fg = C.blue1 },
-    ['@text.todo.checked'] = { fg = C.green.bright },
-    ['@text.warning'] = { fg = C.orange.dim },
-    ['@text.danger'] = { fg = C.red.base },
-
     -- LSP Semantic Token Groups
-    ['@lsp.type.boolean'] = { fg = C.snow1 },
-    ['@lsp.type.builtinType'] = { fg = C.gray5 },
-    ['@lsp.type.comment'] = { fg = C.gray5 },
-    ['@lsp.type.enum'] = { fg = C.gray5 },
-    ['@lsp.type.enumMember'] = { fg = C.gray5 },
-    ['@lsp.type.escapeSequence'] = { fg = C.magenta.bright },
-    ['@lsp.type.interface'] = { fg = C.blue1 },
-    ['@lsp.type.keyword'] = { fg = C.blue1 },
-    ['@lsp.type.namespace'] = { fg = C.gray5 },
-    ['@lsp.type.number'] = { fg = C.gray5 },
-    ['@lsp.type.operator'] = { fg = C.snow1 },
-    ['@lsp.type.parameter'] = { fg = C.gray5, italic = true },
-    ['@lsp.type.property'] = { fg = C.gray5 },
-    ['@lsp.type.selfKeyword'] = { fg = C.gray5 },
-    ['@lsp.type.string.rust'] = { fg = C.gray5 },
-    ['@lsp.type.typeAlias'] = { fg = C.gray5 },
+    -- Types follow the pattern @lsp.type.<type>.<filetype>
+    -- These groups are for the Neovim tree-sitter highlights.
+    -- As of writing, tree-sitter support is a WIP, group names may change.
 
-    -- Additional Elements
-    ['@text.todo'] = { fg = C.blue1 },
-    ['@text.note'] = { fg = C.gray5 },
-    ['@string.special'] = { fg = C.yellow.dim },
-    ['@tag'] = { fg = C.blue1 },
-    ['@tag.delimiter'] = { fg = C.fg },
-    ['@tag.attribute'] = { fg = C.yellow.dim },
-    ['@text'] = { fg = C.gray5 },
-    ['@text.strong'] = { bold = true },
-    ['@text.emphasis'] = { italic = true },
-    ['@text.underline'] = { underline = true },
-    ['@text.strike'] = { strikethrough = true },
-    ['@text.title'] = { fg = C.gray5 },
-    ['@text.uri'] = { underline = true },
-    ['@text.literal'] = { fg = C.gray5 },
-    ['@constant'] = { fg = C.gray5 },
-    ['@number'] = { fg = C.gray5 },
-    ['@float'] = { fg = C.gray5 },
-    ['@boolean'] = { fg = C.gray5 },
-    ['@constant.macro'] = { fg = C.gray5 },
-    ['@constant.builtin'] = { fg = C.gray5 },
-    ['@keyword.return'] = { fg = C.blue1 },
-    ['@keyword.export'] = { fg = C.blue1 },
-    ['@repeat'] = { fg = C.blue1 },
-    ['@conditional'] = { fg = C.blue1 },
-    ['@class'] = { fg = C.blue1 },
-    ['@keyword.operator'] = { fg = C.blue1 },
-    ['@include'] = { fg = C.blue1 },
-    ['@macro'] = { fg = C.blue1 },
-    ['@preproc'] = { fg = C.blue1 },
-    ['@attribute'] = { fg = C.blue1 },
-    ['@function.macro'] = { fg = C.blue1 },
-    ['@define'] = { fg = C.blue1 },
-    ['@exception'] = { fg = C.blue1 },
-    ['@function'] = { fg = C.blue1 },
-    ['@method'] = { fg = C.blue1 },
-    ['@method.call'] = { fg = C.blue1 },
-    ['@function.call'] = { fg = C.blue1 },
-    ['@function.builtin'] = { fg = C.blue1 },
-    ['@property.cpp'] = { fg = C.cyan.base },
-    ['@namespace'] = { fg = C.yellow.dim },
-    ['@type'] = { fg = C.gray5 },
-    ['@type.definition'] = { fg = C.gray5 },
-    ['@type.qualifier'] = { fg = C.blue1 },
-    ['@storageclass'] = { fg = C.blue1 },
-    ['@none'] = { fg = C.gray5 },
+    --- Misc
+    ['@comment'] = { fg = C.gray1 }, -- General comments
+    ['@comment.documentation'] = { fg = C.gray1 }, -- Documentation comments
+
+    --- Punctuation
+    ['@punctuation.delimiter'] = { fg = C.white.snow1 }, -- Delimiters like '.' or ','
+    ['@punctuation.bracket'] = { fg = C.white.snow1 }, -- Brackets and parentheses
+    ['@punctuation.special'] = { fg = C.orange.soft }, -- Special punctuations
+    ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true }, -- Special punctuations in Markdown
+
+    --- Literals
+    ['@string.documentation'] = { fg = C.gray1 }, -- Documentation strings
+    ['@string.regex'] = { fg = C.magenta.bright }, -- Regular expressions
+    ['@string.escape'] = { fg = C.magenta.bright }, -- Escape characters within a string
+
+    --- Functions
+    ['@constructor'] = { fg = C.orange.soft }, -- Constructors
+    ['@parameter'] = { fg = C.white.snow1, italic = true }, -- Function parameters
+    ['@parameter.builtin'] = { fg = C.white.snow1 }, -- Builtin parameters
+
+    --- Keywords
+    ['@keyword'] = { fg = C.blue1 }, -- General keywords
+    ['@keyword.coroutine'] = { fg = C.orange.base }, -- Coroutine-related keywords
+    ['@keyword.function'] = { fg = C.blue1 }, -- Keywords used to define functions
+    ['@label'] = { fg = C.blue1 }, -- Labels
+
+    --- Types
+    ['@type.builtin'] = { fg = C.green.base }, -- Built-in types
+    ['@field'] = { fg = C.blue1 }, -- Fields
+    ['@property'] = { fg = C.blue1 }, -- Properties
+
+    --- Identifiers
+    ['@variable'] = { fg = C.white.snow1 }, -- Variables
+    ['@variable.builtin'] = { fg = C.white.snow1 }, -- Builtin variables
+
+    --- Text
+    ['@text.literal.markdown_inline'] = { bg = C.black2, fg = C.fg }, -- Inline Markdown text
+    ['@text.reference'] = { fg = C.orange.base }, -- Text references
+    ['@text.todo.unchecked'] = { fg = C.blue1 }, -- Unchecked todos
+    ['@text.todo.checked'] = { fg = C.green.bright }, -- Checked todos
+    ['@text.warning'] = { fg = C.yellow.dim }, -- Warning messages
+    ['@text.danger'] = { fg = C.red.base }, -- Danger messages
+    ['@text.diff.add'] = { fg = C.green.base }, -- Added text in diffs
+    ['@text.diff.delete'] = { fg = C.red.base }, -- Deleted text in diffs
+
+    -- TSX
+    ['@tag.tsx'] = { fg = C.blue1 }, -- JSX tags
+    ['@constructor.tsx'] = { fg = C.blue1 }, -- JSX constructors
+    ['@tag.delimiter.tsx'] = { fg = C.blue1 }, -- JSX delimiters
+
+    --LSP Semantic Token Groups
+    ['@lsp.type.boolean'] = { fg = C.green.bright }, -- Boolean types
+    ['@lsp.type.builtinType'] = { fg = C.green.base }, -- Built-in types
+    ['@lsp.type.comment'] = { fg = C.gray1 }, -- Comments in LSP
+    ['@lsp.type.enum'] = { fg = C.blue1 }, -- Enum types
+    ['@lsp.type.enumMember'] = { fg = C.blue1 }, -- Enum members
+    ['@lsp.type.escapeSequence'] = { fg = C.magenta.bright }, -- Escape sequences
+    ['@lsp.type.formatSpecifier'] = { fg = C.orange.soft }, -- Format specifiers
+    ['@lsp.type.interface'] = { fg = C.blue1 }, -- Interfaces
+    ['@lsp.type.keyword'] = { fg = C.blue1 }, -- Keywords
+    ['@lsp.type.namespace'] = { fg = C.yellow.dim }, -- Namespaces
+    ['@lsp.type.number'] = { fg = C.blue1 }, -- Numbers
+    ['@lsp.type.operator'] = { fg = C.white.snow1 }, -- Operators
+    ['@lsp.type.parameter'] = { fg = C.white.snow1 }, -- Parameters
+    ['@lsp.type.property'] = { fg = C.blue1 }, -- Properties
+    ['@lsp.type.selfKeyword'] = { fg = C.white.snow1 }, -- 'self' keyword
+    ['@lsp.type.string.rust'] = { fg = C.gray1 }, -- Strings in Rust
+    ['@lsp.type.typeAlias'] = { fg = C.blue1 }, -- Type aliases
+    -- Add more groups as needed...
+
+    -- Additional Groups
+    ['@text.todo'] = { fg = C.blue1 }, -- Todos
+    ['@text.note'] = { fg = C.blue1 }, -- Notes
+    ['@string.special'] = { fg = C.yellow.dim }, -- Special characters in strings
+    ['@tag'] = { fg = C.blue1 }, -- Tags like HTML tag names
+    ['@tag.delimiter'] = { fg = C.white.snow1 }, -- Tag delimiters
+    ['@tag.attribute'] = { fg = C.yellow.dim }, -- Tag attributes
+    ['@text'] = { fg = C.fg }, -- Text
+    ['@text.strong'] = { bold = true }, -- Strong text
+    ['@text.emphasis'] = { italic = true }, -- Emphasized text
+    ['@text.underline'] = { underline = true }, -- Underlined text
+    ['@text.strike'] = { strikethrough = true }, -- Strikethrough text
+    ['@text.title'] = { fg = C.blue1 }, -- Title text
+    ['@text.uri'] = { underline = true }, -- URIs like links or emails
+    ['@text.literal'] = { fg = C.gray1 }, -- Literal text
+    ['@constant'] = { fg = C.white.snow1 }, -- Constants
+    ['@number'] = { fg = C.blue1 }, -- Numbers
+    ['@float'] = { fg = C.blue1 }, -- Floats
+    ['@boolean'] = { fg = C.green.bright }, -- Booleans
+    ['@constant.macro'] = { fg = C.white.snow1 }, -- Macros
+    ['@constant.builtin'] = { fg = C.white.snow1 }, -- Builtin constants
+    ['@keyword.return'] = { fg = C.blue1 }, -- Return keyword
+    ['@keyword.export'] = { fg = C.blue1 }, -- Export keyword
+    ['@repeat'] = { fg = C.blue1 }, -- Repeat keyword
+    ['@conditional'] = { fg = C.blue1 }, -- Conditional keywords
+    ['@class'] = { fg = C.blue1 }, -- Class keywords
+    ['@keyword.operator'] = { fg = C.white.snow1 }, -- Operators
+    ['@include'] = { fg = C.orange.base }, -- Include keyword
+    ['@macro'] = { fg = C.orange.base }, -- Macros
+    ['@preproc'] = { fg = C.orange.base }, -- Preprocessor directives
+    ['@attribute'] = { fg = C.orange.base }, -- Attributes
+    ['@function.macro'] = { fg = C.orange.base }, -- Macro functions
+    ['@define'] = { fg = C.orange.base }, -- Define keyword
+    ['@exception'] = { fg = C.orange.base }, -- Exception keywords
+    ['@function'] = { fg = C.blue1 }, -- Functions
+    ['@method'] = { fg = C.blue1 }, -- Methods
+    ['@method.call'] = { fg = C.blue1 }, -- Method calls
+    ['@function.call'] = { fg = C.blue1 }, -- Function calls
+    ['@function.builtin'] = { fg = C.blue1 }, -- Built-in functions
+    ['@property.cpp'] = { fg = C.cyan.base }, -- C++ properties
+    ['@namespace'] = { fg = C.yellow.dim }, -- Namespaces
+    ['@type'] = { fg = C.green.base }, -- Types
+    ['@type.definition'] = { fg = C.green.base }, -- Type definitions
+    ['@type.qualifier'] = { fg = C.blue1 }, -- Type qualifiers
+    ['@storageclass'] = { fg = C.blue1 }, -- Storage classes
+    ['@none'] = { fg = C.white.none }, -- None (for debugging)
 }
