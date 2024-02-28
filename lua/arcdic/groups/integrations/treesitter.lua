@@ -27,15 +27,15 @@ return {
     ['@parameter.builtin'] = { fg = C.white.snow1 }, -- Builtin parameters
 
     --- Keywords
-    ['@keyword'] = { fg = C.blue1 }, -- General keywords
+    ['@keyword'] = { fg = C.orange.soft }, -- General keywords
     ['@keyword.coroutine'] = { fg = C.orange.base }, -- Coroutine-related keywords
-    ['@keyword.function'] = { fg = C.blue1 }, -- Keywords used to define functions
+    ['@keyword.function'] = { fg = C.orange.bright }, -- Keywords used to define functions
     ['@label'] = { fg = C.blue1 }, -- Labels
 
     --- Types
     ['@type.builtin'] = { fg = C.green.base }, -- Built-in types
     ['@field'] = { fg = C.blue1 }, -- Fields
-    ['@property'] = { fg = C.blue1 }, -- Properties
+    ['@property'] = { fg = C.green.base }, -- Properties
 
     --- Identifiers
     ['@variable'] = { fg = C.white.snow1 }, -- Variables
@@ -65,7 +65,7 @@ return {
     ['@lsp.type.escapeSequence'] = { fg = C.magenta.bright }, -- Escape sequences
     ['@lsp.type.formatSpecifier'] = { fg = C.orange.soft }, -- Format specifiers
     ['@lsp.type.interface'] = { fg = C.blue1 }, -- Interfaces
-    ['@lsp.type.keyword'] = { fg = C.blue1 }, -- Keywords
+    ['@lsp.type.keyword'] = { fg = C.orange.soft }, -- Keywords
     ['@lsp.type.namespace'] = { fg = C.yellow.dim }, -- Namespaces
     ['@lsp.type.number'] = { fg = C.blue1 }, -- Numbers
     ['@lsp.type.operator'] = { fg = C.white.snow1 }, -- Operators
