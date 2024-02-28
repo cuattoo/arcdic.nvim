@@ -7,8 +7,8 @@ return {
     -- As of writing, tree-sitter support is a WIP, group names may change.
 
     --- Misc
-    ['@comment'] = { fg = C.gray1 }, -- General comments
-    ['@comment.documentation'] = { fg = C.gray1 }, -- Documentation comments
+    ['@comment'] = { fg = C.gray2 }, -- General comments
+    ['@comment.documentation'] = { fg = C.gray2 }, -- Documentation comments
 
     --- Punctuation
     ['@punctuation.delimiter'] = { fg = C.white.snow1 }, -- Delimiters like '.' or ','
@@ -17,7 +17,7 @@ return {
     ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true }, -- Special punctuations in Markdown
 
     --- Literals
-    ['@string.documentation'] = { fg = C.gray1 }, -- Documentation strings
+    ['@string.documentation'] = { fg = C.gray2 }, -- Documentation strings
     ['@string.regex'] = { fg = C.magenta.bright }, -- Regular expressions
     ['@string.escape'] = { fg = C.magenta.bright }, -- Escape characters within a string
 
@@ -59,9 +59,9 @@ return {
     --LSP Semantic Token Groups
     ['@lsp.type.boolean'] = { fg = C.green.bright }, -- Boolean types
     ['@lsp.type.builtinType'] = { fg = C.green.base }, -- Built-in types
-    ['@lsp.type.comment'] = { fg = C.gray1 }, -- Comments in LSP
-    ['@lsp.type.enum'] = { fg = C.blue1 }, -- Enum types
-    ['@lsp.type.enumMember'] = { fg = C.blue1 }, -- Enum members
+    ['@lsp.type.comment'] = { fg = C.gray2 }, -- Comments in LSP
+    ['@lsp.type.enum'] = { fg = C.magenta.base }, -- Enum types
+    ['@lsp.type.enumMember'] = { fg = C.magenta.base }, -- Enum members
     ['@lsp.type.escapeSequence'] = { fg = C.magenta.bright }, -- Escape sequences
     ['@lsp.type.formatSpecifier'] = { fg = C.orange.soft }, -- Format specifiers
     ['@lsp.type.interface'] = { fg = C.blue1 }, -- Interfaces
@@ -72,15 +72,15 @@ return {
     ['@lsp.type.parameter'] = { fg = C.white.snow1 }, -- Parameters
     ['@lsp.type.property'] = { fg = C.blue1 }, -- Properties
     ['@lsp.type.selfKeyword'] = { fg = C.white.snow1 }, -- 'self' keyword
-    ['@lsp.type.string.rust'] = { fg = C.gray1 }, -- Strings in Rust
-    ['@lsp.type.typeAlias'] = { fg = C.blue1 }, -- Type aliases
+    ['@lsp.type.string.rust'] = { fg = C.gray2 }, -- Strings in Rust
+    ['@lsp.type.typeAlias'] = { fg = C.white.snow1 }, -- Type aliases
     -- Add more groups as needed...
 
     -- Additional Groups
     ['@text.todo'] = { fg = C.blue1 }, -- Todos
     ['@text.note'] = { fg = C.blue1 }, -- Notes
     ['@string.special'] = { fg = C.yellow.dim }, -- Special characters in strings
-    ['@tag'] = { fg = C.blue1 }, -- Tags like HTML tag names
+    ['@tag'] = { fg = C.orange.soft }, -- Tags like HTML tag names
     ['@tag.delimiter'] = { fg = C.white.snow1 }, -- Tag delimiters
     ['@tag.attribute'] = { fg = C.yellow.dim }, -- Tag attributes
     ['@text'] = { fg = C.fg }, -- Text
@@ -88,9 +88,9 @@ return {
     ['@text.emphasis'] = { italic = true }, -- Emphasized text
     ['@text.underline'] = { underline = true }, -- Underlined text
     ['@text.strike'] = { strikethrough = true }, -- Strikethrough text
-    ['@text.title'] = { fg = C.blue1 }, -- Title text
+    ['@text.title'] = { fg = C.black2 }, -- Title text
     ['@text.uri'] = { underline = true }, -- URIs like links or emails
-    ['@text.literal'] = { fg = C.gray1 }, -- Literal text
+    ['@text.literal'] = { fg = C.gray2 }, -- Literal text
     ['@constant'] = { fg = C.white.snow1 }, -- Constants
     ['@number'] = { fg = C.blue1 }, -- Numbers
     ['@float'] = { fg = C.blue1 }, -- Floats
@@ -110,11 +110,11 @@ return {
     ['@function.macro'] = { fg = C.orange.base }, -- Macro functions
     ['@define'] = { fg = C.orange.base }, -- Define keyword
     ['@exception'] = { fg = C.orange.base }, -- Exception keywords
-    ['@function'] = { fg = C.blue1 }, -- Functions
-    ['@method'] = { fg = C.blue1 }, -- Methods
-    ['@method.call'] = { fg = C.blue1 }, -- Method calls
-    ['@function.call'] = { fg = C.blue1 }, -- Function calls
-    ['@function.builtin'] = { fg = C.blue1 }, -- Built-in functions
+    ['@function'] = { fg = C.orange.soft }, -- Functions
+    ['@method'] = { fg = C.magenta.dim }, -- Methods
+    ['@method.call'] = { fg = C.magenta.bright }, -- Method calls
+    ['@function.call'] = { fg = C.magenta.base }, -- Function calls
+    ['@function.builtin'] = { fg = C.magenta.dim }, -- Built-in functions
     ['@property.cpp'] = { fg = C.cyan.base }, -- C++ properties
     ['@namespace'] = { fg = C.yellow.dim }, -- Namespaces
     ['@type'] = { fg = C.green.base }, -- Types
