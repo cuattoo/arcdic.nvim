@@ -30,11 +30,11 @@ return {
     ['@keyword'] = { fg = C.orange.soft }, -- General keywords
     ['@keyword.coroutine'] = { fg = C.orange.base }, -- Coroutine-related keywords
     ['@keyword.function'] = { fg = C.orange.bright }, -- Keywords used to define functions
-    ['@label'] = { fg = C.blue1 }, -- Labels
+    ['@label'] = { fg = C.orange.soft }, -- Labels
 
     --- Types
     ['@type.builtin'] = { fg = C.green.base }, -- Built-in types
-    ['@field'] = { fg = C.blue1 }, -- Fields
+    ['@field'] = { fg = C.magenta.dim }, -- Fields
     ['@property'] = { fg = C.green.base }, -- Properties
 
     --- Identifiers
