@@ -1,3 +1,5 @@
+-- Notes and format from @folke/tokyonight.nvim.
+
 local C = require 'arcdic.colors'
 
 return {
@@ -7,119 +9,136 @@ return {
     -- As of writing, tree-sitter support is a WIP, group names may change.
 
     --- Misc
-    ['@comment'] = { fg = C.gray2 }, -- General comments
-    ['@comment.documentation'] = { fg = C.gray2 }, -- Documentation comments
+    ['@comment'] = { link = 'Comment' },
+    ['@comment.documentation'] = { link = 'Comment' },
+    ['@operator'] = { fg = C.fg }, -- For any operator: `+`, but also `->` and `*` in C.
 
     --- Punctuation
-    ['@punctuation.delimiter'] = { fg = C.white.snow1 }, -- Delimiters like '.' or ','
-    ['@punctuation.bracket'] = { fg = C.white.snow1 }, -- Brackets and parentheses
-    ['@punctuation.special'] = { fg = C.orange.soft }, -- Special punctuations
-    ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true }, -- Special punctuations in Markdown
+    ['@punctuation.delimiter'] = { link = '@operator' }, -- For delimiters ie: `.`
+    ['@punctuation.bracket'] = { link = '@operator' }, -- For brackets and parens.
+    ['@punctuation.special'] = { link = 'Macro' }, -- For special punctutation that does not fall in the catagories before.
+    ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true },
 
     --- Literals
-    ['@string.documentation'] = { fg = C.gray2 }, -- Documentation strings
-    ['@string.regex'] = { fg = C.magenta.bright }, -- Regular expressions
-    ['@string.escape'] = { fg = C.magenta.bright }, -- Escape characters within a string
+    ['@string.documentation'] = { link = 'String' },
+    ['@string.regex'] = { fg = C.magenta.bright }, -- For regexes.
+    ['@string.escape'] = { fg = C.magenta.bright }, -- For escape characters within a string.
 
     --- Functions
-    ['@constructor'] = { fg = C.orange.soft }, -- Constructors
-    ['@parameter'] = { fg = C.white.snow1, italic = true }, -- Function parameters
-    ['@parameter.builtin'] = { fg = C.white.snow1 }, -- Builtin parameters
+    ['@constructor'] = { link = 'Function' }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    ['@parameter'] = { fg = C.fg, italic = true }, -- For parameters of a function.
+    ['@parameter.builtin'] = { link = 'Builtin' }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
     --- Keywords
-    ['@keyword'] = { fg = C.orange.soft }, -- General keywords
-    ['@keyword.coroutine'] = { fg = C.orange.base }, -- Coroutine-related keywords
-    ['@keyword.function'] = { fg = C.orange.bright }, -- Keywords used to define functions
-    ['@label'] = { fg = C.orange.soft }, -- Labels
+    ['@keyword'] = { link = 'Keyword' }, -- For keywords that don't fall in previous categories.
+    ['@keyword.coroutine'] = { link = 'Macro' }, -- For keywords related to coroutines.
+    ['@keyword.function'] = { link = 'Keyword' }, -- For keywords used to define a fuction.
+    ['@label'] = { link = 'Keyword' }, -- For labels: `label:` in C and `:label:` in Lua.
 
     --- Types
-    ['@type.builtin'] = { fg = C.green.base }, -- Built-in types
-    ['@field'] = { fg = C.magenta.dim }, -- Fields
-    ['@property'] = { fg = C.green.base }, -- Properties
+    ['@type.builtin'] = { link = 'Type' },
+    ['@field'] = { link = 'Field' }, -- For fields.
+    ['@property'] = { link = 'Field' },
 
     --- Identifiers
-    ['@variable'] = { fg = C.white.snow1 }, -- Variables
-    ['@variable.builtin'] = { fg = C.white.snow1 }, -- Builtin variables
+    ['@variable'] = { link = 'Variable' }, -- Any variable name that does not have another highlight.
+    ['@variable.builtin'] = { link = 'Builtin' }, -- Variable names that are defined by the languages, like `this` or `self`.
 
     --- Text
-    ['@text.literal.markdown_inline'] = { bg = C.black2, fg = C.fg }, -- Inline Markdown text
-    ['@text.reference'] = { fg = C.orange.base }, -- Text references
-    ['@text.todo.unchecked'] = { fg = C.blue1 }, -- Unchecked todos
-    ['@text.todo.checked'] = { fg = C.green.bright }, -- Checked todos
-    ['@text.warning'] = { fg = C.yellow.dim }, -- Warning messages
-    ['@text.danger'] = { fg = C.red.base }, -- Danger messages
-    ['@text.diff.add'] = { fg = C.green.base }, -- Added text in diffs
-    ['@text.diff.delete'] = { fg = C.red.base }, -- Deleted text in diffs
+    --['@spell'] = {},
+    -- ["@text.literal.markdown"] = { },
+    ['@text.literal.markdown_inline'] = { bg = C.black2, fg = C.fg },
+    ['@text.reference'] = { link = 'Link' },
+    ['@text.todo.unchecked'] = { fg = C.blue1 }, -- For brackets and parens.
+    ['@text.todo.checked'] = { fg = C.green.bright }, -- For brackets and parens.
+    ['@text.warning'] = { fg = C.warning },
+    ['@text.danger'] = { fg = C.error },
+    ['@text.diff.add'] = { link = 'DiffAdd' },
+    ['@text.diff.delete'] = { link = 'DiffDelete' },
 
     -- TSX
-    ['@tag.tsx'] = { fg = C.blue1 }, -- JSX tags
-    ['@constructor.tsx'] = { fg = C.blue1 }, -- JSX constructors
-    ['@tag.delimiter.tsx'] = { fg = C.blue1 }, -- JSX delimiters
+    ['@tag.tsx'] = { fg = C.blue1 },
+    ['@constructor.tsx'] = { fg = C.blue1 },
+    ['@tag.delimiter.tsx'] = { fg = C.blue1 },
 
     --LSP Semantic Token Groups
-    ['@lsp.type.boolean'] = { fg = C.green.bright }, -- Boolean types
-    ['@lsp.type.builtinType'] = { fg = C.green.base }, -- Built-in types
-    ['@lsp.type.comment'] = { fg = C.gray2 }, -- Comments in LSP
-    ['@lsp.type.enum'] = { fg = C.magenta.base }, -- Enum types
-    ['@lsp.type.enumMember'] = { fg = C.magenta.base }, -- Enum members
-    ['@lsp.type.escapeSequence'] = { fg = C.magenta.bright }, -- Escape sequences
-    ['@lsp.type.formatSpecifier'] = { fg = C.orange.soft }, -- Format specifiers
-    ['@lsp.type.interface'] = { fg = C.blue1 }, -- Interfaces
-    ['@lsp.type.keyword'] = { fg = C.orange.soft }, -- Keywords
-    ['@lsp.type.namespace'] = { fg = C.yellow.dim }, -- Namespaces
-    ['@lsp.type.number'] = { fg = C.blue1 }, -- Numbers
-    ['@lsp.type.operator'] = { fg = C.white.snow1 }, -- Operators
-    ['@lsp.type.parameter'] = { fg = C.white.snow1 }, -- Parameters
-    ['@lsp.type.property'] = { fg = C.blue1 }, -- Properties
-    ['@lsp.type.selfKeyword'] = { fg = C.white.snow1 }, -- 'self' keyword
-    ['@lsp.type.string.rust'] = { fg = C.gray2 }, -- Strings in Rust
-    ['@lsp.type.typeAlias'] = { fg = C.white.snow1 }, -- Type aliases
-    -- Add more groups as needed...
+    ['@lsp.type.boolean'] = { link = 'Boolean' },
+    ['@lsp.type.builtinType'] = { link = 'Type' },
+    ['@lsp.type.comment'] = { link = 'Comment' },
+    ['@lsp.type.enum'] = { link = 'Type' },
+    ['@lsp.type.enumMember'] = { link = 'Field' },
+    ['@lsp.type.escapeSequence'] = { link = '@string.escape' },
+    ['@lsp.type.formatSpecifier'] = { link = '@punctuation.special' },
+    ['@lsp.type.interface'] = { link = 'Keyword' },
+    ['@lsp.type.keyword'] = { link = 'Keyword' },
+    ['@lsp.type.namespace'] = { link = 'Namespace' },
+    ['@lsp.type.number'] = { link = 'Number' },
+    ['@lsp.type.operator'] = { link = '@operator' },
+    ['@lsp.type.parameter'] = { link = '@parameter' },
+    ['@lsp.type.property'] = { link = '@property' },
+    ['@lsp.type.selfKeyword'] = { link = 'Builtin' },
+    ['@lsp.type.string.rust'] = { link = 'String' },
+    ['@lsp.type.typeAlias'] = { link = 'Type' },
+    ['@lsp.type.unresolvedReference'] = {},
+    ['@lsp.type.variable'] = {}, -- use treesitter styles for regular variables
+    ['@lsp.typemod.class.defaultLibrary'] = { link = 'Type' },
+    ['@lsp.typemod.enum.defaultLibrary'] = { link = 'Type' },
+    ['@lsp.typemod.enumMember.defaultLibrary'] = { link = 'Constant' },
+    ['@lsp.typemod.function.defaultLibrary'] = { link = 'Function' },
+    ['@lsp.typemod.keyword.async'] = { link = 'Macro' },
+    ['@lsp.typemod.macro.defaultLibrary'] = { link = 'Macro' },
+    ['@lsp.typemod.method.defaultLibrary'] = { link = 'Function' },
+    ['@lsp.typemod.operator.injected'] = { link = 'Operator' },
+    ['@lsp.typemod.string.injected'] = { link = 'String' },
+    ['@lsp.typemod.type.defaultLibrary'] = { link = 'Type' },
+    ['@lsp.typemod.variable.defaultLibrary'] = { link = 'Variable' },
+    ['@lsp.typemod.variable.injected'] = { link = 'Variable' },
+    ['@lsp.typemod.variable.globalScope'] = { link = 'Macro' },
 
-    -- Additional Groups
-    ['@text.todo'] = { fg = C.blue1 }, -- Todos
-    ['@text.note'] = { fg = C.blue1 }, -- Notes
-    ['@string.special'] = { fg = C.yellow.dim }, -- Special characters in strings
-    ['@tag'] = { fg = C.orange.soft }, -- Tags like HTML tag names
-    ['@tag.delimiter'] = { fg = C.white.snow1 }, -- Tag delimiters
-    ['@tag.attribute'] = { fg = C.yellow.dim }, -- Tag attributes
-    ['@text'] = { fg = C.fg }, -- Text
-    ['@text.strong'] = { bold = true }, -- Strong text
-    ['@text.emphasis'] = { italic = true }, -- Emphasized text
-    ['@text.underline'] = { underline = true }, -- Underlined text
-    ['@text.strike'] = { strikethrough = true }, -- Strikethrough text
-    ['@text.title'] = { fg = C.black2 }, -- Title text
-    ['@text.uri'] = { underline = true }, -- URIs like links or emails
-    ['@text.literal'] = { fg = C.gray2 }, -- Literal text
-    ['@constant'] = { fg = C.white.snow1 }, -- Constants
-    ['@number'] = { fg = C.blue1 }, -- Numbers
-    ['@float'] = { fg = C.blue1 }, -- Floats
-    ['@boolean'] = { fg = C.green.bright }, -- Booleans
-    ['@constant.macro'] = { fg = C.white.snow1 }, -- Macros
-    ['@constant.builtin'] = { fg = C.white.snow1 }, -- Builtin constants
-    ['@keyword.return'] = { fg = C.blue1 }, -- Return keyword
-    ['@keyword.export'] = { fg = C.blue1 }, -- Export keyword
-    ['@repeat'] = { fg = C.blue1 }, -- Repeat keyword
-    ['@conditional'] = { fg = C.blue1 }, -- Conditional keywords
-    ['@class'] = { fg = C.blue1 }, -- Class keywords
-    ['@keyword.operator'] = { fg = C.white.snow1 }, -- Operators
-    ['@include'] = { fg = C.orange.base }, -- Include keyword
-    ['@macro'] = { fg = C.orange.base }, -- Macros
-    ['@preproc'] = { fg = C.orange.base }, -- Preprocessor directives
-    ['@attribute'] = { fg = C.orange.base }, -- Attributes
-    ['@function.macro'] = { fg = C.orange.base }, -- Macro functions
-    ['@define'] = { fg = C.orange.base }, -- Define keyword
-    ['@exception'] = { fg = C.orange.base }, -- Exception keywords
-    ['@function'] = { fg = C.orange.soft }, -- Functions
-    ['@method'] = { fg = C.magenta.dim }, -- Methods
-    ['@method.call'] = { fg = C.magenta.bright }, -- Method calls
-    ['@function.call'] = { fg = C.magenta.base }, -- Function calls
-    ['@function.builtin'] = { fg = C.magenta.dim }, -- Built-in functions
-    ['@property.cpp'] = { fg = C.cyan.base }, -- C++ properties
-    ['@namespace'] = { fg = C.yellow.dim }, -- Namespaces
-    ['@type'] = { fg = C.green.base }, -- Types
-    ['@type.definition'] = { fg = C.green.base }, -- Type definitions
-    ['@type.qualifier'] = { fg = C.blue1 }, -- Type qualifiers
-    ['@storageclass'] = { fg = C.blue1 }, -- Storage classes
-    ['@none'] = { fg = C.white.none }, -- None (for debugging)
+    -- Things that seems to be missing?
+    ['@text.todo'] = { link = 'Todo' },
+    ['@text.note'] = { link = 'Note' },
+    ['@string.special'] = { fg = C.yellow.base }, -- For escape characters within a string.
+    ['@tag'] = { fg = C.blue1 }, -- Tags like html tag names.
+    ['@tag.delimiter'] = { fg = C.fg }, -- Tag delimiter like `<` `>` `/`
+    ['@tag.attribute'] = { fg = C.yellow.base }, -- Tag attribute like `id` `class`
+    ['@text'] = { link = 'Normal' }, -- For strings considered text in a markup language.
+    ['@text.strong'] = { bold = true },
+    ['@text.emphasis'] = { italic = true }, -- For text to be represented with emphasis.
+    ['@text.underline'] = { underline = true }, -- For text to be represented with an underline.
+    ['@text.strike'] = { strikethrough = true }, -- For strikethrough text.
+    ['@text.title'] = { link = 'Title' }, -- Text that is part of a title.
+    ['@text.uri'] = { underline = true }, -- Any URI like a link or email.
+    ['@text.literal'] = { link = 'String' },
+    ['@constant'] = { link = 'Constant' },
+    ['@number'] = { link = 'Constant' },
+    ['@float'] = { link = 'Constant' },
+    ['@boolean'] = { link = 'Constant' },
+    ['@constant.macro'] = { link = 'Constant' },
+    ['@constant.builtin'] = { link = 'Constant' },
+    ['@keyword.return'] = { link = 'Keyword' },
+    ['@keyword.export'] = { link = 'Keyword' },
+    ['@repeat'] = { link = 'Keyword' },
+    ['@conditional'] = { link = 'Keyword' },
+    ['@class'] = { link = 'Keyword' },
+    ['@keyword.operator'] = { link = 'Keyword' },
+    ['@include'] = { fg = C.magenta.base },
+    ['@macro'] = { link = 'Macro' },
+    ['@preproc'] = { link = 'Macro' },
+    ['@attribute'] = { link = 'Macro' },
+    ['@function.macro'] = { link = 'Macro' },
+    ['@define'] = { link = 'Macro' },
+    ['@exception'] = { link = 'Macro' },
+    ['@function'] = { link = 'Function' },
+    ['@method'] = { link = 'Function' },
+    ['@method.call'] = { link = 'Function' },
+    ['@function.call'] = { link = 'Function' },
+    ['@function.builtin'] = { link = 'Function' },
+    ['@property.cpp'] = { fg = C.cyan.base },
+    ['@namespace'] = { fg = C.yellow.dim },
+    ['@type'] = { link = 'Type' },
+    ['@type.definition'] = { link = 'Type' },
+    ['@type.qualifier'] = { link = 'Keyword' },
+    ['@storageclass'] = { link = 'Keyword' },
+    ['@none'] = { link = 'None' },
 }

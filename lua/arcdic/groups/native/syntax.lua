@@ -49,7 +49,7 @@ return {
     Structure = { link = 'Type' }, --  struct, union, enum, etc.
     Typedef = { link = 'Type' }, --  A typedef
 
-    Special = { fg = C.blue1 }, -- (preferred) any special symbol
+    Special = { fg = C.sblue1 }, -- (preferred) any special symbol
     -- SpecialChar   = { }, --  special character in a constant
     -- Tag           = { }, --    you can use CTRL-] on this
     -- Delimiter     = { }, --  character that needs attention
@@ -69,12 +69,12 @@ return {
 
     -- What are these?
     qfLineNr = { fg = C.gray4 },
-    qfFileName = { fg = C.blue1 },
+    qfFileName = { fg = C.sblue1 },
 
     htmlH1 = { fg = C.yellow.base, bold = true },
     htmlH2 = { fg = C.orange.base },
 
-    Link = { fg = C.blue1, underline = true },
+    Link = { fg = C.sblue1, underline = true },
     CodeBlock = { bg = C.black1, fg = C.fg },
 
     mkdHeading = { link = 'htmlH1' },
@@ -92,11 +92,11 @@ return {
     markdownLinkText = { link = 'Link' },
 
     ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true },
-    ['@text.todo.unchecked'] = { fg = C.blue1 }, -- For brackets and parens.
+    ['@text.todo.unchecked'] = { fg = C.sblue1 }, -- For brackets and parens.
     ['@text.todo.checked'] = { fg = C.green.base }, -- For brackets and parens.
-    ['@text.literal.markdown_inline'] = { bg = C.black0, fg = C.blue1 },
+    ['@text.literal.markdown_inline'] = { bg = C.black0, fg = C.sblue1 },
     ['@text.literal.markdown'] = { link = 'Normal' },
-    ['helpCommand'] = { bg = C.black0, fg = C.blue1 },
+    ['helpCommand'] = { bg = C.black0, fg = C.sblue1 },
 
     debugPC = { bg = C.bg_sidebar }, -- used for highlighting the current line in terminal-debug
     debugBreakpoint = { fg = C.red.bright }, -- used for breakpoint colors in terminal-debug

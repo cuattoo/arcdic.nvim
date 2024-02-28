@@ -5,7 +5,7 @@ return {
     NvimTreeNormal = { fg = C.fg, bg = C.bg },
     NvimTreeNormalNC = { fg = C.fg, bg = C.bg },
 
-    NvimTreeFolderName = { fg = C.blue1 },
+    NvimTreeFolderName = { fg = C.sblue1 },
     NvimTreeOpenedFolderName = { link = 'NvimTreeFolderName' },
     NvimTreeEmptyFolderName = { link = 'NvimTreeFolderName' },
     NvimTreeFolderIcon = { fg = C.yellow.dim },
@@ -21,7 +21,7 @@ return {
 
     NvimTreeWinSeparator = { fg = C.bg_dark, bg = C.bg },
 
-    NvimTreeCursorLine = { bg = C.gray1 },
+    NvimTreeCursorLine = { bg = C.gray2 },
     NvimTreeCursor = { bg = C.none, fg = C.none },
 
     NvimTreeSymlink = { fg = C.blue2 },

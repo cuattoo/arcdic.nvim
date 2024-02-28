@@ -15,7 +15,7 @@ local palette = {
     -- This color is used on their website's dark theme.
     gray0 = '#242933', -- bg
     -- Polar Night.
-    gray1 = '#2E3440',
+    gray2 = '#2E3440',
     gray2 = '#3B4252',
     gray3 = '#434C5E',
     gray4 = '#4C566A',
@@ -36,7 +36,7 @@ local palette = {
 
     -- Frost.
     blue0 = '#5E81AC',
-    blue1 = '#81A1C1',
+    sblue1 = '#81A1C1',
     blue2 = '#88C0D0',
 
     cyan = {

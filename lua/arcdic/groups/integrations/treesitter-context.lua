@@ -5,9 +5,9 @@ local bg
 local fg
 if O.ts_context.dark_background then
     bg = C.black
-    fg = C.gray1
+    fg = C.gray2
 else
-    bg = C.gray1
+    bg = C.gray2
     fg = C.gray4
 end
 

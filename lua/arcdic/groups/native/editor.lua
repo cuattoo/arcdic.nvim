@@ -16,7 +16,7 @@ local groups = {
     CursorLineNr = { fg = C.gray5, bold = O.cursorline.bold_number }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     CursorLineSign = {},
 
-    Directory = { fg = C.blue1 }, -- directory names (and other special names in listings)
+    Directory = { fg = C.sblue1 }, -- directory names (and other special names in listings)
 
     EndOfBuffer = { fg = C.fg_sidebar }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
 
@@ -43,7 +43,7 @@ local groups = {
     ModeMsg = { fg = C.fg, bold = true }, -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea = { fg = C.fg }, -- Area for messages and cmdline
     -- MsgSeparator= { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
-    MoreMsg = { fg = C.blue1 }, -- |more-prompt|
+    MoreMsg = { fg = C.sblue1 }, -- |more-prompt|
     NonText = { fg = C.gray4 }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 
     Normal = { fg = C.fg, bg = C.bg }, -- normal text
