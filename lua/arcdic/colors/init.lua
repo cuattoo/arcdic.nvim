@@ -19,6 +19,7 @@ function C.extend_palette()
     C.grey3 = C.gray3
     C.grey4 = C.gray4
     C.grey5 = C.gray5
+    C.xterm.grey = C.xterm.grey
 
     -- Swap background
     if O.swap_backgrounds then
@@ -60,7 +61,7 @@ function C.extend_palette()
     C.fg_popup_border = C.border_fg
 
     -- Floating windows
-    C.bg_float = (O.transparent_bg and C.none) or C.black1
+    C.bg_float = (C.xterm.grey and C.none) or C.black1
     C.fg_float = C.fg
     C.bg_float_border = C.bg_float
     C.fg_float_border = C.border_fg
