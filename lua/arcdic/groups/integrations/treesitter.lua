@@ -38,7 +38,7 @@ return {
     --- Types
     ['@type.builtin'] = { link = 'Type' },
     ['@field'] = { link = 'Field' }, -- For fields.
-    ['@property'] = { fg = C.white.default },
+    ['@property'] = { link = 'Field' },
 
     --- Identifiers
     ['@variable'] = { link = 'Variable' }, -- Any variable name that does not have another highlight.
@@ -122,7 +122,7 @@ return {
     ['@conditional'] = { link = 'Keyword' },
     ['@class'] = { link = 'Keyword' },
     ['@keyword.operator'] = { link = 'Keyword' },
-    ['@include'] = { fg = C.magenta.base },
+    ['@include'] = { link = 'Include' },
     ['@macro'] = { link = 'Macro' },
     ['@preproc'] = { link = 'Macro' },
     ['@attribute'] = { link = 'Macro' },
