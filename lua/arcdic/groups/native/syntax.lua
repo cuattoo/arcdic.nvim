@@ -15,7 +15,7 @@ return {
     Boolean = { link = 'Number' }, --  a boolean constant: TRUE, false
     Float = { link = 'Number' }, --    a floating point constant: 2.3e10
     None = { fg = C.none, bg = C.none },
-    String = { fg = C.white.snow1 }, --   a string constant: "this is a string"
+    String = { fg = C.red.base }, --   a string constant: "this is a string"
     Character = { fg = C.green.base }, --  a character constant: 'c', '\n'
     Variable = { fg = C.fg },
     Namespace = { fg = C.yellow.dim },
@@ -28,7 +28,7 @@ return {
     Identifier = { fg = C.fg }, -- (preferred) any variable name
     Function = { fg = C.brown0 }, -- function name (also: methods for classes)
 
-    Keyword = { fg = C.orange.base, bold = O.bold_keywords }, --  any other keyword
+    Keyword = { fg = C.blue2, bold = O.bold_keywords }, --  any other keyword
     Statement = { link = 'Keyword' }, -- (preferred) any statement
     Conditional = { link = 'Keyword' }, --  if, then, else, endif, switch, etc.
     Repeat = { link = 'Keyword' }, --   for, do, while, etc.

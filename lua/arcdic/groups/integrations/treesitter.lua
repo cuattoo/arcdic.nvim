@@ -15,8 +15,8 @@ return {
 
     --- Punctuation
     ['@punctuation.delimiter'] = { link = '@operator' }, -- For delimiters ie: `.`
-    ['@punctuation.bracket'] = { link = '@operator' }, -- For brackets and parens.
-    ['@punctuation.special'] = { link = 'Macro' }, -- For special punctutation that does not fall in the catagories before.
+    ['@punctuation.bracket'] = { fg = C.grey5}, -- For brackets and parens.
+    ['@punctuation.special'] = { link = '@operator' }, -- For special punctutation that does not fall in the catagories before.
     ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true },
 
     --- Literals
@@ -25,7 +25,7 @@ return {
     ['@string.escape'] = { fg = C.magenta.bright }, -- For escape characters within a string.
 
     --- Functions
-    ['@constructor'] = { link = 'Function' }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    ['@constructor'] = { fg = C.gray5 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
     ['@parameter'] = { fg = C.fg, italic = true }, -- For parameters of a function.
     ['@parameter.builtin'] = { link = 'Builtin' }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
@@ -38,7 +38,7 @@ return {
     --- Types
     ['@type.builtin'] = { link = 'Type' },
     ['@field'] = { link = 'Field' }, -- For fields.
-    ['@property'] = { link = 'Field' },
+    ['@property'] = { fg = C.white.default },
 
     --- Identifiers
     ['@variable'] = { link = 'Variable' }, -- Any variable name that does not have another highlight.
@@ -80,7 +80,7 @@ return {
     ['@lsp.type.string.rust'] = { link = 'String' },
     ['@lsp.type.typeAlias'] = { link = 'Type' },
     ['@lsp.type.unresolvedReference'] = {},
-    ['@lsp.type.variable'] = {}, -- use treesitter styles for regular variables
+    ['@lsp.type.variable'] = { link = 'Function'}, -- use treesitter styles for regular variables
     ['@lsp.typemod.class.defaultLibrary'] = { link = 'Type' },
     ['@lsp.typemod.enum.defaultLibrary'] = { link = 'Type' },
     ['@lsp.typemod.enumMember.defaultLibrary'] = { link = 'Constant' },
@@ -122,7 +122,7 @@ return {
     ['@conditional'] = { link = 'Keyword' },
     ['@class'] = { link = 'Keyword' },
     ['@keyword.operator'] = { link = 'Keyword' },
-    ['@include'] = { link = 'Include' },
+    ['@include'] = { fg = C.magenta.base },
     ['@macro'] = { link = 'Macro' },
     ['@preproc'] = { link = 'Macro' },
     ['@attribute'] = { link = 'Macro' },

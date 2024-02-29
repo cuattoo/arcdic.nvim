@@ -48,9 +48,9 @@ function C.extend_palette()
 
     -- Foregrounds
     C.fg = C.white.snow1
-    C.fg_bright = C.white1
-    C.fg_dark = C.white0
-    C.fg_sidebar = C.gray2
+    C.fg_bright = C.white.snow2
+    C.fg_dark = C.white.default
+    C.fg_sidebar = C.white.default
     C.fg_fold = C.fg
     C.fg_selected = C.fg_bright
 
@@ -61,7 +61,7 @@ function C.extend_palette()
     C.fg_popup_border = C.border_fg
 
     -- Floating windows
-    C.bg_float = (C.xterm.grey and C.none) or C.black1
+    C.bg_float = (C.xterm.grey and C.white.default) or C.black1
     C.fg_float = C.fg
     C.bg_float_border = C.bg_float
     C.fg_float_border = C.border_fg
