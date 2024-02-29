@@ -19,7 +19,7 @@ return {
     Character = { fg = C.green.base }, --  a character constant: 'c', '\n'
     Variable = { fg = C.fg },
     Namespace = { fg = C.yellow.dim },
-    Field = { fg = C.brown.cocoa },
+    Field = { fg = C.white.snow2 },
 
     Title = { fg = C.yellow.base },
 
