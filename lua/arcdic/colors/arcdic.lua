@@ -58,6 +58,8 @@ local palette = {
     brown3 = '#5c392b',
     brown4 = '#4d2921',
 
+    purple0 = '#D16D9E',
+
     -- Frost.
     blue0 = '#5E81AC',
     blue1 = '#81A1C1',
@@ -100,7 +102,7 @@ local palette = {
     xterm = {
         white = '#eeeeee',
         grey = '#808080',
-    }
+    },
 }
 
 -- `white0` is used as the default fg, and has a blue tint.

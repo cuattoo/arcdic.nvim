@@ -38,7 +38,7 @@ return {
     --- Types
     ['@type.builtin'] = { link = 'Type' },
     ['@field'] = { link = 'Field' }, -- For fields.
-    ['@property'] = { link = 'Field' },
+    ['@property'] = { fg = C.white.default },
 
     --- Identifiers
     ['@variable'] = { link = 'Variable' }, -- Any variable name that does not have another highlight.

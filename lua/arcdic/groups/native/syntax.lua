@@ -19,14 +19,14 @@ return {
     Character = { fg = C.green.base }, --  a character constant: 'c', '\n'
     Variable = { fg = C.fg },
     Namespace = { fg = C.yellow.dim },
-    Field = { fg = C.white.snow2 },
+    Field = { fg = C.white.snow1 },
 
     Title = { fg = C.yellow.base },
 
     Builtin = { fg = C.brown.walnut },
 
     Identifier = { fg = C.fg }, -- (preferred) any variable name
-    Function = { fg = C.red.bright }, -- function name (also: methods for classes)
+    Function = { fg = C.brown0 }, -- function name (also: methods for classes)
 
     Keyword = { fg = C.orange.base, bold = O.bold_keywords }, --  any other keyword
     Statement = { link = 'Keyword' }, -- (preferred) any statement
@@ -35,11 +35,11 @@ return {
     Label = { link = 'Keyword' }, --    case, default, etc.
     Operator = { fg = C.fg }, -- "sizeof", "+", "*", etc.
 
-    Macro = { fg = C.red.bright }, -- same as Define
+    Macro = { fg = C.yellow.base }, -- same as Define
     Exception = { link = 'Macro' }, --  try, catch, throw
     PreProc = { link = 'Macro' }, -- (preferred) generic preprocessor
-    Include = { link = 'Macro' }, --  preprocessor #include
-    Define = { link = 'Macro' }, --   preprocessor #define
+    Include = { fg = C.magenta.bright }, --  preprocessor #include
+    Define = { fg = C.magenta.base }, --   preprocessor #define
     PreCondit = { link = 'Macro' }, --  preprocessor #if, #else, #endif, etc.
 
     Comment = { fg = C.gray4, italic = O.italic_comments },

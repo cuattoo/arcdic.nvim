@@ -82,7 +82,7 @@ function C.extend_palette()
     }
 
     -- Diagnostics
-    C.error = C.red.bright
+    C.error = C.red.soft
     C.warn = C.yellow.base
     C.warning = C.warn
     C.hint = C.green.bright
