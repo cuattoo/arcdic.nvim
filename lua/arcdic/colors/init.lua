@@ -61,7 +61,7 @@ function C.extend_palette()
     C.fg_popup_border = C.border_fg
 
     -- Floating windows
-    C.bg_float = (C.bg and C.xterm.grey) or C.black1
+    C.bg_float = (C.bg and C.base.bg) or C.white.default
     C.fg_float = C.fg
     C.bg_float_border = C.bg_float
     C.fg_float_border = C.border_fg
