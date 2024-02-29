@@ -19,14 +19,14 @@ return {
     Character = { fg = C.green.base }, --  a character constant: 'c', '\n'
     Variable = { fg = C.fg },
     Namespace = { fg = C.yellow.dim },
-    Field = { fg = C.green.dim },
+    Field = { fg = C.brown.cocoa },
 
     Title = { fg = C.yellow.base },
 
     Builtin = { fg = C.brown.walnut },
 
     Identifier = { fg = C.fg }, -- (preferred) any variable name
-    Function = { fg = C.blue1 }, -- function name (also: methods for classes)
+    Function = { fg = C.red.bright }, -- function name (also: methods for classes)
 
     Keyword = { fg = C.orange.base, bold = O.bold_keywords }, --  any other keyword
     Statement = { link = 'Keyword' }, -- (preferred) any statement
@@ -35,7 +35,7 @@ return {
     Label = { link = 'Keyword' }, --    case, default, etc.
     Operator = { fg = C.fg }, -- "sizeof", "+", "*", etc.
 
-    Macro = { fg = C.red.base }, -- same as Define
+    Macro = { fg = C.red.bright }, -- same as Define
     Exception = { link = 'Macro' }, --  try, catch, throw
     PreProc = { link = 'Macro' }, -- (preferred) generic preprocessor
     Include = { link = 'Macro' }, --  preprocessor #include
