@@ -8,15 +8,15 @@ local groups = {
     ColorColumn = { bg = C.bg_visual }, -- used for the columns set with 'colorcolumn'
     Conceal = { fg = C.gray3 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
 
-    Cursor = { fg = C.black0, bg = C.fg }, -- character under the cursor
-    lCursor = { fg = C.black0 }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
-    CursorIM = { fg = C.black0 }, -- like Cursor, but used when in IME mode |CursorIM|
+    Cursor = { fg = C.fg, bg = C.fg }, -- character under the cursor
+    lCursor = { fg = C.fg }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
+    CursorIM = { fg = C.fg }, -- like Cursor, but used when in IME mode |CursorIM|
     CursorColumn = { bg = C.bg_highlight, bold = O.cursorline.bold }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine = { bg = C.bg_highlight, bold = O.cursorline.bold }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
-    CursorLineNr = { fg = C.gray5, bold = O.cursorline.bold_number }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+    CursorLineNr = { fg = C.white.snow3, bold = O.cursorline.bold_number }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     CursorLineSign = {},
 
-    Directory = { fg = C.sblue1 }, -- directory names (and other special names in listings)
+    Directory = { fg = C.blue1 }, -- directory names (and other special names in listings)
 
     EndOfBuffer = { fg = C.fg_sidebar }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
 
@@ -43,7 +43,7 @@ local groups = {
     ModeMsg = { fg = C.fg, bold = true }, -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea = { fg = C.fg }, -- Area for messages and cmdline
     -- MsgSeparator= { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
-    MoreMsg = { fg = C.sblue1 }, -- |more-prompt|
+    MoreMsg = { fg = C.blue1 }, -- |more-prompt|
     NonText = { fg = C.gray4 }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 
     Normal = { fg = C.fg, bg = C.bg }, -- normal text
