@@ -55,7 +55,7 @@ function C.extend_palette()
     C.fg_selected = C.fg_bright
 
     -- Popups
-    C.bg_popup = C.base.bg
+    C.bg_popup = C.bg
     C.fg_popup = C.fg
     C.bg_popup_border = C.bg
     C.fg_popup_border = C.border_fg
