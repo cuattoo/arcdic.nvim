@@ -15,7 +15,7 @@ local palette = {
     -- This color is used on their website's dark theme.
     gray0 = '#242933', -- bg
     -- Polar Night.
-    gray2 = '#2E3440',
+    gray1 = '#2E3440',
     gray2 = '#3B4252',
     gray3 = '#434C5E',
     gray4 = '#4C566A',
@@ -23,7 +23,23 @@ local palette = {
     -- A light blue/gray.
     -- From @nightfox.nvim.
     gray5 = '#60728A',
+    brown = {
+        walnut = '#3D2E1F',
+        cocoa = '#5F4B32',
+        mahogany = '#6D543E',
+        chestnut = '#7C5D49',
+        sepia = '#8B6754',
+        caramel = '#9A725F',
+        toffee = '#A9806B',
+        hazelnut = '#B78F77',
+        rust = '#C69D83',
+        copper = '#D5AC8F',
 
+        taupe = '#7F7F7F',
+        fawn = '#A3A3A3',
+        mocha = '#B5B5B5',
+        latte = '#C7C7C7',
+    },
     -- Dim white.
     white = {
         default = '#BBC3D4',
@@ -33,10 +49,18 @@ local palette = {
         snow2 = '#E5E9F0',
         snow3 = '#ECEFF4',
     },
+    -- added
+    -- brown color
+    brown0 = '#724a27', -- Alternative brown color
+    -- Additional shades of brown
+    brown1 = '#7a593f',
+    brown2 = '#6b4935',
+    brown3 = '#5c392b',
+    brown4 = '#4d2921',
 
     -- Frost.
     blue0 = '#5E81AC',
-    sblue1 = '#81A1C1',
+    blue1 = '#81A1C1',
     blue2 = '#88C0D0',
 
     cyan = {

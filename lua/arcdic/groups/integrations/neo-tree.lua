@@ -9,7 +9,7 @@ return {
     NeoTreeRootName = { link = 'NvimTreeRootFolder' },
     --NeoTreeFileName = { link = 'NvimTreeNormal' },
     NeoTreeFileName = { fg = C.white.snow1},
-    NeoTreeFileIcon = { link = 'NeoTreeFileIcon' },
+    NeoTreeFileIcon = { fg = C.brown.rust },
     NeoTreeFileNameOpened = {fg = C.white.snow1 },
     NeoTreeIndentMarker = { link = 'NvimTreeIndentMarker' },
     NeoTreeGitAdded = { fg = C.git.add },
@@ -19,7 +19,5 @@ return {
     NeoTreeNormal = { link = 'NvimTreeNormal' },
     NeoTreeNormalNC = { link = 'NvimTreeNormalNC' },
     NeoTreeSymbolicLinkTarget = { link = 'NvimTreeSymlink' },
-
     NeoTreeHiddenByName = { fg = C.green.dim }
-
 }

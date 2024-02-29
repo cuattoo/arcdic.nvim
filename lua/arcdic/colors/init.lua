@@ -34,7 +34,7 @@ function C.extend_palette()
     -- Backgrounds
     C.bg = (O.transparent_bg and C.none) or C.orange.soft
     C.bg_dark = (O.transparent_bg and C.none) or C.orange.soft
-    C.bg_highlight = U.blend(C.bg_dark, C.bg, O.cursorline.blend)
+    C.bg_highlight = U.blend(C.bg_dark, C.xterm.grey, O.cursorline.blend)
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
     C.bg_popup = (O.transparent_bg and C.none) or C.bg
@@ -68,17 +68,17 @@ function C.extend_palette()
 
     -- Diffs
     C.diff = {
-        change0 = U.blend(C.blue1, C.bg, 0.05),
-        change1 = U.blend(C.blue2, C.bg, diff_blend),
+        change0 = U.blend(C.white.default, C.bg, 0.05),
+        change1 = U.blend(C.white.default, C.bg, diff_blend),
         add = U.blend(C.green.base, C.bg, diff_blend),
-        delete = U.blend(C.red.base, C.bg, diff_blend),
+        delete = U.blend(C.brown4, C.bg, diff_blend),
     }
 
     -- Git
     C.git = {
         add = C.green.base,
-        delete = C.red.base,
-        change = C.white.default,
+        delete = C.brown4,
+        change = C.white.snow1,
     }
 
     -- Diagnostics
