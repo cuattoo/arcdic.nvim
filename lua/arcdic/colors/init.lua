@@ -34,7 +34,7 @@ function C.extend_palette()
     -- Backgrounds
     C.bg = (O.transparent_bg and C.none) or C.orange.soft
     C.bg_dark = (O.transparent_bg and C.none) or C.orange.soft
-    C.bg_highlight = U.blend(C.brown.taupe, C.xterm.grey, O.cursorline.blend)
+    C.bg_highlight = U.blend(C.brown.taupe, C.base.bg, O.cursorline.blend)
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
     C.bg_popup = (O.transparent_bg and C.none) or C.bg
@@ -55,7 +55,7 @@ function C.extend_palette()
     C.fg_selected = C.fg_bright
 
     -- Popups
-    C.bg_popup = C.xterm.grey
+    C.bg_popup = C.base.bg
     C.fg_popup = C.fg
     C.bg_popup_border = C.bg
     C.fg_popup_border = C.border_fg

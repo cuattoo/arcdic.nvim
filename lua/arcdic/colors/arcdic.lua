@@ -4,6 +4,10 @@
 local O = require('arcdic.config').options
 
 local palette = {
+    base = {
+        -- bg handled by kitty on my system
+        bg = '#898989',
+    },
     none = 'NONE',
     -- Blacks. Not in base Nord.
     black0 = '#191D24',
