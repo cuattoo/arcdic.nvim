@@ -8,9 +8,9 @@ local groups = {
     ColorColumn = { bg = C.bg_visual }, -- used for the columns set with 'colorcolumn'
     Conceal = { fg = C.gray3 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
 
-    Cursor = { fg = C.fg, bg = C.fg }, -- character under the cursor
-    lCursor = { fg = C.fg }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
-    CursorIM = { fg = C.fg }, -- like Cursor, but used when in IME mode |CursorIM|
+    Cursor = { fg = C.brown.taupe, bg = C.brown.mocha }, -- character under the cursor
+    lCursor = { fg = C.brown.taupe }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
+    CursorIM = { fg = C.brown.taupe }, -- like Cursor, but used when in IME mode |CursorIM|
     CursorColumn = { bg = C.bg_highlight, bold = O.cursorline.bold }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine = { bg = C.bg_highlight, bold = O.cursorline.bold }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     CursorLineNr = { fg = C.white.snow3, bold = O.cursorline.bold_number }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
