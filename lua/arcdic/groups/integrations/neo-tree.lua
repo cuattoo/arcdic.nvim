@@ -12,7 +12,6 @@ return {
     NeoTreeFileName = { fg = C.white.snow1},
     NeoTreeFileIcon = { fg = C.brown.rust },
     NeoTreeFileNameOpened = {fg = C.orange.bright },
-    NeoTreeIndentMarker = { link = 'NvimTreeIndentMarker' },
     NeoTreeGitAdded = { fg = C.git.add },
     NeoTreeGitConflict = { fg = C.magenta.bright },
     NeoTreeGitModified = { fg = C.git.change },
@@ -20,5 +19,8 @@ return {
     NeoTreeNormal = { link = 'NvimTreeNormal' },
     NeoTreeNormalNC = { link = 'NvimTreeNormalNC' },
     NeoTreeSymbolicLinkTarget = { link = 'NvimTreeSymlink' },
-    NeoTreeHiddenByName = { fg = C.green.dim }
+    NeoTreeHiddenByName = { fg = C.green.dim },
+
+    NeoTreeIndentMarker = { link = 'NeoTreeCursorLine' },
+    NeoTreeExpander = { link = 'NeoTreeCursorLine'},
 }
