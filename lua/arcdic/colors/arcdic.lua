@@ -68,6 +68,7 @@ local palette = {
     blue0 = '#5E81AC',
     blue1 = '#81A1C1',
     blue2 = '#88C0D0',
+    blue4 = '#d1f2f7',
 
     cyan = {
         base = '#8FBCBB',
