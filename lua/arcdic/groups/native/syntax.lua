@@ -25,7 +25,7 @@ return {
 
     Builtin = { fg = C.brown.rust},
 
-    Identifier = { fg = C.fg }, -- (preferred) any variable name
+    Identifier = { fg = C.blue2 }, -- (preferred) any variable name
     Function = { fg = C.magenta.bright }, -- function name (also: methods for classes)
 
     Keyword = { fg = C.blue2, bold = O.bold_keywords }, --  any other keyword

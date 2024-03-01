@@ -19,7 +19,7 @@ function C.extend_palette()
     C.grey3 = C.gray3
     C.grey4 = C.gray4
     C.grey5 = C.gray5
-    C.xterm.grey = C.xterm.grey
+    C.xterm.grey = C.xterm.gray
 
     -- Swap background
     if O.swap_backgrounds then
