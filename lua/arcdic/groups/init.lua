@@ -7,7 +7,6 @@ M.integrations = {
     'nvim-dap-ui',
     'nvim-dap',
     'dashboard',
-    'fidget',
     'indent-blankline',
     'lspsaga',
     'neo-tree',
