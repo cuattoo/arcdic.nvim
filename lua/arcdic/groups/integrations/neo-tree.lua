@@ -4,7 +4,7 @@ return {
 
     --NeoTreeCursorLine = { link = 'NvimTreeCursorLine' },
     NeoTreeCursorLine = { bg = C.bg_hightlight},
-    NeoTreeDirectoryIcon = { link = 'NvimTreeFolderIcon' },
+    NeoTreeDirectoryIcon = { link = 'NeoTreeDirectoryName'  },
     NeoTreeDirectoryName = { fg = C.fg},
     NeoTreeRootName = { link = 'NvimTreeRootFolder' },
     --NeoTreeFileName = { link = 'NvimTreeNormal' },
