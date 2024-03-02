@@ -19,8 +19,6 @@ function C.extend_palette()
     C.grey3 = C.gray3
     C.grey4 = C.gray4
     C.grey5 = C.gray5
-    C.base.bg = C.base.bg
-    C.xterm.grey = C.xterm.grey
 
     -- Swap background
     if O.swap_backgrounds then
@@ -35,7 +33,7 @@ function C.extend_palette()
     -- Backgrounds
     C.bg = (O.transparent_bg and C.none) or C.orange.soft
     C.bg_dark = (O.transparent_bg and C.none) or C.orange.soft
-    C.bg_highlight = (O.transparent_bg and C.brown.taupe) or U.blend(C.magenta.bright, C.blue2, O.cursorline.blend)
+    C.bg_highlight = (O.transparent_bg and C.base.bg) or U.blend(C.magenta.bright, C.blue2, O.cursorline.blend)
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
     C.bg_popup = (O.transparent_bg and C.none) or C.bg
