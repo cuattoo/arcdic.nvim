@@ -11,6 +11,8 @@ local defaults = {
     italic_comments = true,
     -- Enable general editor background transparency.
     transparent_bg = true,
+
+    bg_hightlight = true,
     -- Enable brighter float border.
     bright_border = false,
     -- Adjusts some colors to make the theme a bit nicer (imo).
@@ -36,7 +38,7 @@ local defaults = {
     },
     telescope = {
         -- Available styles: `classic`, `flat`.
-        style = 'flat',
+        style = 'classic',
     },
     leap = {
         -- Dims the backdrop when using leap.

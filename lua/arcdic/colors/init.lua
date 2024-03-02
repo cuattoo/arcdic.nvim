@@ -33,7 +33,7 @@ function C.extend_palette()
     -- Backgrounds
     C.bg = (O.transparent_bg and C.none) or C.orange.soft
     C.bg_dark = (O.transparent_bg and C.none) or C.orange.soft
-    C.bg_highlight = (O.transparent_bg and C.base.bg) or U.blend(C.magenta.bright, C.blue2, O.cursorline.blend)
+    C.bg_highlight = (O.transparent_bg and O.bg_hightlight and C.base.bg) or U.blend(C.magenta.bright, C.blue2, O.cursorline.blend)
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
     C.bg_popup = (O.transparent_bg and C.none) or C.bg
@@ -48,7 +48,7 @@ function C.extend_palette()
     -- Foregrounds
     C.fg = C.white.snow1
     C.fg_inactive = (O.transparent_bg and C.base.bg) or C.white.default
-    C.fg_hightlight = (O.transparent_bg and C.bg_hightlight == U.blend(C.brown.taupe, C.base.bg, O.cursorline.blend) and C.white.snow1) or C.white.default
+    C.fg_hightlight = (O.transparent_bg and O.bg_highlight and C.white.snow1) or C.white.default
     C.fg_bright = C.white.snow2
     C.fg_dark = C.white.default
     C.fg_sidebar = C.white.default
