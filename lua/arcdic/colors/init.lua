@@ -19,6 +19,7 @@ function C.extend_palette()
     C.grey3 = C.gray3
     C.grey4 = C.gray4
     C.grey5 = C.gray5
+    C.base.bg = C.base.bg
     C.xterm.grey = C.xterm.grey
 
     -- Swap background
@@ -32,17 +33,9 @@ function C.extend_palette()
     -- Some of the format is from @folke/tokyonight.nvim.
 
     -- Backgrounds
-    C.bg = (O.transparent_bg and C.none) or C.base.bg
+    C.bg = (O.transparent_bg and C.none) or C.orange.soft
     C.bg_dark = (O.transparent_bg and C.none) or C.orange.soft
-    C.bg_highlight = {
-    function()
-        if O.transparent_bg then
-            return C.base.bg
-        else
-            return U.blend(C.magenta.bright, C.blue2, O.cursorline.blend)
-        end
-    end,
-    }
+    C.bg_highlight = (O.transparent_bg and C.base.bg) or U.blend(C.magenta.bright, C.blue2, O.cursorline.blend)
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
     C.bg_popup = (O.transparent_bg and C.none) or C.bg
