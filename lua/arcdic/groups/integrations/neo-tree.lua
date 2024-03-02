@@ -2,7 +2,7 @@ local C = require 'arcdic.colors'
 
 return {
 
-    NeoTreeCursorLine = { link = 'NvimTreeCursorLine' },
+    NeoTreeCursorLine = { bg = C.bg_hightlight},
     NeoTreeDirectoryIcon = { link = 'NeoTreeDirectoryName'  },
     NeoTreeDirectoryName = { fg = C.fg},
     NeoTreeDirectoryNameOpened = { fg = C.orange.bright},

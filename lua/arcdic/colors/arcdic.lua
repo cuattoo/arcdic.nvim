@@ -53,7 +53,7 @@ local palette = {
         snow2 = '#E5E9F0',
         snow3 = '#ECEFF4',
     },
-    -- added
+
     -- brown color
     brown0 = '#724a27', -- Alternative brown color
     -- Additional shades of brown
