@@ -13,13 +13,13 @@ return {
     NeoTreeFileNameOpened = {fg = C.orange.bright },
     NeoTreeGitAdded = { fg = C.git.add },
     NeoTreeGitConflict = { fg = C.magenta.bright },
-    NeoTreeGitModified = { fg = C.git.change },
+    NeoTreeGitModified = { fg = C.git.change, bg = C.none},
     NeoTreeGitUntracked = { fg = C.fg_sidebar },
     NeoTreeNormal = { link = 'NvimTreeNormal' },
     NeoTreeNormalNC = { link = 'NvimTreeNormalNC' },
     NeoTreeSymbolicLinkTarget = { link = 'NvimTreeSymlink' },
     NeoTreeHiddenByName = { fg = C.green.dim },
 
-    NeoTreeIndentMarker = { fg = C.fg_inactive, bg = C.none},
+    NeoTreeIndentMarker = { fg = C.base.bg, bg = C.none},
     NeoTreeExpander = { link = 'NeoTreeCursorLine'},
 }
