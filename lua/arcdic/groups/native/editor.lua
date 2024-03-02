@@ -8,15 +8,15 @@ local groups = {
     ColorColumn = { bg = C.bg_visual }, -- used for the columns set with 'colorcolumn'
     Conceal = { fg = C.gray3 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
 
-    Cursor = { fg = C.brown.taupe, bg = C.brown.mocha }, -- character under the cursor
-    lCursor = { fg = C.brown.taupe }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
-    CursorIM = { fg = C.brown.taupe }, -- like Cursor, but used when in IME mode |CursorIM|
+    Cursor = { fg = C.bg, bg = C.fg }, -- character under the cursor
+    lCursor = { fg = C.bg }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
+    CursorIM = { fg = C.fg }, -- like Cursor, but used when in IME mode |CursorIM|
     CursorColumn = { bg = C.bg_highlight, bold = O.cursorline.bold }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine = { bg = C.bg_highlight, bold = O.cursorline.bold }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
-    CursorLineNr = { fg = C.white.snow3, bold = O.cursorline.bold_number }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+    CursorLineNr = { fg = C.fg_hightlight, bold = O.cursorline.bold_number }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     CursorLineSign = {},
 
-    Directory = { fg = C.blue1 }, -- directory names (and other special names in listings)
+    Directory = { fg = C.fg_hightlight }, -- directory names (and other special names in listings)
 
     EndOfBuffer = { fg = C.fg_sidebar }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
 
