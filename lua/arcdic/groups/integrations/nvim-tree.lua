@@ -5,7 +5,7 @@ return {
     NvimTreeNormal = { fg = C.fg, bg = C.bg },
     NvimTreeNormalNC = { fg = C.fg, bg = C.bg },
 
-    NvimTreeFolderName = { fg = C.fg_hightlight },
+    NvimTreeFolderName = { fg = C.fg_highlight },
     NvimTreeOpenedFolderName = { link = 'NvimTreeFolderName' },
     NvimTreeEmptyFolderName = { link = 'NvimTreeFolderName' },
     NvimTreeFolderIcon = { Link = 'NvimTreeFolderName' },
