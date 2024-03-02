@@ -20,6 +20,6 @@ return {
     NeoTreeSymbolicLinkTarget = { link = 'NvimTreeSymlink' },
     NeoTreeHiddenByName = { fg = C.green.dim },
 
-    NeoTreeIndentMarker = { fg = C.base.bg },
+    NeoTreeIndentMarker = { fg = C.base.bg, bg = C.none},
     NeoTreeExpander = { link = 'NeoTreeCursorLine'},
 }
