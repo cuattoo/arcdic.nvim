@@ -21,8 +21,8 @@ return {
 
     NvimTreeWinSeparator = { fg = C.bg_dark, bg = C.bg },
 
-    NvimTreeCursorLine = { bg = C.gray2 },
+    NvimTreeCursorLine = { bg = C.bg_highlight },
     NvimTreeCursor = { bg = C.none, fg = C.none },
 
-    NvimTreeSymlink = { fg = C.blue2 },
+    NvimTreeSymlink = { fg = C.fg_bright},
 }
