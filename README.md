@@ -6,7 +6,7 @@ If there is anything that does not seem right, even if it is a very small highli
 
 # Preview
 ![preview](https://raw.githubusercontent.com/cuattoo/arcdic.nvim/main/.screenshots/2024-03-03_09-29-52.png)
-![preview](https://raw.githubusercontent.com/cuattoo/arcdic.nvim/main/.screenshots/2024-03-03_09-29-52.png)
+![preview](https://raw.githubusercontent.com/cuattoo/arcdic.nvim/main/.screenshots/2024-03-03_09-47-27.png)
 # 📦 Installation
 
 With [packer.nvim](https://github.com/wbthomason/packer.nvim):
