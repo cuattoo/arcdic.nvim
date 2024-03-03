@@ -1,11 +1,11 @@
 # arcdic.nvim
 
-[![Tests](https://github.com/AlexvZyl/nordic.nvim/workflows/Tests/badge.svg)](https://github.com/AlexvZyl/nordic.nvim/actions?workflow=Tests)
-
-A Neovim colorscheme based on [Nord](https://www.nordtheme.com/), but in lighter colors.  The idea behind this colorscheme is to use Nord, but add some lighter colors and use Aurora more prominently than Nord themes usually do.  This ends up creating a colorscheme that is soft on the eyes.
+A Neovim colorscheme based on [Nord](https://www.nordtheme.com/), but in lighter colors.  The idea behind this colorscheme is to use Nord, but add some lighter colors and use Aurora more prominently than Nord themes usually do.  This ends up creating a colorscheme that is soft on the eyes in the light.
 
 If there is anything that does not seem right, even if it is a very small highlight, please let me know with an issue or PR!
 
+# Preview
+![preview](https://raw.githubusercontent.com/cuattoo/arcdic.nvim/main/.screenshots/2024-03-03_09-29-52.png)
 # 📦 Installation
 
 With [packer.nvim](https://github.com/wbthomason/packer.nvim):
@@ -31,6 +31,7 @@ With [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
 Plug 'cuattoo/arcdic.nvim', { 'branch': 'main' }
+```
 
 # 🚀 Usage
 Using vim:
@@ -64,7 +65,7 @@ local palette = require 'arcdic.colors'
 
 # ⚙️ Configuration
 
-Nordic will use the default values, unless `setup` is called.  Below is the default configuration.
+Arcdic will use the default values, unless `setup` is called.  Below is the default configuration.
 
 ```lua
 require 'arcrdic' .setup {
@@ -76,6 +77,8 @@ require 'arcrdic' .setup {
     italic_comments = true,
     -- Enable general editor background transparency.
     transparent_bg = false,
+    -- Enable background highlighting
+    bg_highlight = true,
     -- Enable brighter float border.
     bright_border = false,
     -- Reduce the overall amount of blue in the theme (diverges from base Nord).
