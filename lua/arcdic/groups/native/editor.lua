@@ -11,8 +11,8 @@ local groups = {
     Cursor = { fg = C.bg, bg = C.fg }, -- character under the cursor
     lCursor = { fg = C.bg }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM = { fg = C.fg }, -- like Cursor, but used when in IME mode |CursorIM|
-    CursorColumn = { bg = C.bg_highlight, bold = O.cursorline.bold }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine = { bg = C.bg_highlight, bold = O.cursorline.bold }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorColumn = { bg = C.xterm.grey, bold = O.cursorline.bold }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
+    CursorLine = { bg = C.xterm.grey, bold = O.cursorline.bold }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     CursorLineNr = { fg = C.fg_hightlight, bold = O.cursorline.bold_number }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     CursorLineSign = {},
 

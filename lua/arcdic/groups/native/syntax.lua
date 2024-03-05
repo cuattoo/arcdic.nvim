@@ -38,8 +38,8 @@ return {
     Macro = { fg = C.yellow.base }, -- same as Define
     Exception = { link = 'Macro' }, --  try, catch, throw
     PreProc = { link = 'Macro' }, -- (preferred) generic preprocessor
-    Include = { fg = C.magenta.bright }, --  preprocessor #include
-    Define = { fg = C.magenta.base }, --   preprocessor #define
+    Include = { fg = C.purple.base }, --  preprocessor #include
+    Define = { fg = C.purple.base }, --   preprocessor #define
     PreCondit = { link = 'Macro' }, --  preprocessor #if, #else, #endif, etc.
 
     Comment = { fg = C.gray4, italic = O.italic_comments },
