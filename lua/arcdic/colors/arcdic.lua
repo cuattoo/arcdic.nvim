@@ -24,6 +24,11 @@ local palette = {
     gray3 = '#434C5E',
     gray4 = '#4C566A',
 
+
+        taupe = '#7F7F7F',
+        fawn = '#A3A3A3',
+        mocha = '#B5B5B5',
+        latte = '#C7C7C7',
     -- A light blue/gray.
     -- From @nightfox.nvim.
     gray5 = '#60728A',
@@ -38,11 +43,6 @@ local palette = {
         hazelnut = '#B78F77',
         rust = '#C69D83',
         copper = '#D5AC8F',
-
-        taupe = '#7F7F7F',
-        fawn = '#A3A3A3',
-        mocha = '#B5B5B5',
-        latte = '#C7C7C7',
     },
     -- Dim white.
     white = {
@@ -62,7 +62,6 @@ local palette = {
     brown3 = '#5c392b',
     brown4 = '#4d2921',
 
-    purple0 = '#D16D9E',
 
     -- Frost.
     blue0 = '#5E81AC',
@@ -78,6 +77,9 @@ local palette = {
     -- Aurora.
     -- These colors are used a lot, so we need variations for them.
     -- Base colors are from original Nord palette.
+    purple = {
+       base = '#D16D9E',
+    },
     red = {
         base = '#BF616A',
         bright = '#C5727A',

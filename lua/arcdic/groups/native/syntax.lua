@@ -10,12 +10,12 @@ return {
     -- out groups should chain up to their "preferred" group by default.
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Constant = { fg = C.magenta.bright }, -- (preferred) any constant
+    Constant = { fg = C.purple.base }, -- (preferred) any constant
     Number = { link = 'Constant' }, --   a number constant: 234, 0xff
     Boolean = { link = 'Number' }, --  a boolean constant: TRUE, false
     Float = { link = 'Number' }, --    a floating point constant: 2.3e10
     None = { fg = C.none, bg = C.none },
-    String = { fg = C.red.soft }, --   a string constant: "this is a string"
+    String = { fg = C.brown.walnut }, --   a string constant: "this is a string"
     Character = { fg = C.green.base }, --  a character constant: 'c', '\n'
     Variable = { fg = C.fg },
     Namespace = { fg = C.yellow.dim },
