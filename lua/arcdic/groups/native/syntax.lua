@@ -15,7 +15,7 @@ return {
     Boolean = { link = 'Number' }, --  a boolean constant: TRUE, false
     Float = { link = 'Number' }, --    a floating point constant: 2.3e10
     None = { fg = C.none, bg = C.none },
-    String = { fg = C.brown.walnut }, --   a string constant: "this is a string"
+    String = { fg = C.green.dim }, --   a string constant: "this is a string"
     Character = { fg = C.green.base }, --  a character constant: 'c', '\n'
     Variable = { fg = C.fg },
     Namespace = { fg = C.yellow.dim },
