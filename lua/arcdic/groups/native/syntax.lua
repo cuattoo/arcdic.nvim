@@ -10,7 +10,7 @@ return {
     -- out groups should chain up to their "preferred" group by default.
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Constant = { fg = C.purple.base }, -- (preferred) any constant
+    Constant = { fg = C.yellow.enigma }, -- (preferred) any constant
     Number = { link = 'Constant' }, --   a number constant: 234, 0xff
     Boolean = { link = 'Number' }, --  a boolean constant: TRUE, false
     Float = { link = 'Number' }, --    a floating point constant: 2.3e10

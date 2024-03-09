@@ -78,7 +78,6 @@ local palette = {
     -- These colors are used a lot, so we need variations for them.
     -- Base colors are from original Nord palette.
     purple = {
-       base = '#D16D9E',
     },
     red = {
         base = '#BF616A',
@@ -94,6 +93,7 @@ local palette = {
     yellow = {
         base = '#EBCB8B',
         bright = '#EFD49F',
+        enigma = '#D1be9E', --added
         dim = '#E7C173',
     },
     green = {

@@ -11,7 +11,7 @@ return {
     NeoTreeFileIcon = { fg = C.brown.rust },
     NeoTreeFileNameOpened = {fg = C.orange.bright },
     NeoTreeGitAdded = { link = 'NvimTreeGitNew' },
-    NeoTreeGitConflict = { fg = C.purple.base },
+    NeoTreeGitConflict = { fg = C.yellow.enigma },
     NeoTreeGitModified = { link = 'NvimTreeGitDirty' },
     NeoTreeGitUntracked = { link = "NvimTreeGitStaged" },
     NeoTreeNormal = { link = 'NvimTreeNormal' },
