@@ -23,7 +23,7 @@ return {
 
     Title = { fg = C.yellow.base },
 
-    Builtin = { fg = C.brown.rust},
+    Builtin = { fg = C.red.rust},
 
     Identifier = { fg = C.blue2 }, -- (preferred) any variable name
     Function = { fg = C.magenta.bright }, -- function name (also: methods for classes)

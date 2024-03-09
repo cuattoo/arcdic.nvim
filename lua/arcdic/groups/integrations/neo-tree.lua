@@ -8,7 +8,7 @@ return {
     NeoTreeRootName = { link = 'NvimTreeRootFolder' },
     --NeoTreeFileName = { link = 'NvimTreeNormal' },
     NeoTreeFileName = { fg = C.white.snow1},
-    NeoTreeFileIcon = { fg = C.brown.rust },
+    NeoTreeFileIcon = { fg = C.fg },
     NeoTreeFileNameOpened = {fg = C.orange.bright },
     NeoTreeGitAdded = { link = 'NvimTreeGitNew' },
     NeoTreeGitConflict = { fg = C.yellow.enigma },
