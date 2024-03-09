@@ -32,18 +32,6 @@ local palette = {
     -- A light blue/gray.
     -- From @nightfox.nvim.
     gray5 = '#60728A',
-    brown = {
-        walnut = '#3D2E1F',
-        cocoa = '#5F4B32',
-        mahogany = '#6D543E',
-        chestnut = '#7C5D49',
-        sepia = '#8B6754',
-        caramel = '#9A725F',
-        toffee = '#A9806B',
-        hazelnut = '#B78F77',
-        rust = '#C69D83',
-        copper = '#D5AC8F',
-    },
     -- Dim white.
     white = {
         default = '#BBC3D4',
@@ -53,16 +41,6 @@ local palette = {
         snow2 = '#E5E9F0',
         snow3 = '#ECEFF4',
     },
-
-    -- brown color
-    brown0 = '#724a27', -- Alternative brown color
-    -- Additional shades of brown
-    brown1 = '#7a593f',
-    brown2 = '#6b4935',
-    brown3 = '#5c392b',
-    brown4 = '#4d2921',
-
-
     -- Frost.
     blue0 = '#5E81AC',
     blue1 = '#81A1C1',
@@ -82,6 +60,7 @@ local palette = {
     red = {
         base = '#BF616A',
         bright = '#C5727A',
+        soft = '#eebebe',
         dim = '#B74E58',
     },
     orange = {

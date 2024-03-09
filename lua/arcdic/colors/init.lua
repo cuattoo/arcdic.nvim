@@ -78,7 +78,7 @@ function C.extend_palette()
     -- Git
     C.git = {
         add = C.green.base,
-        delete = C.brown4,
+        delete = C.red.soft,
         change = C.white.snow1,
     }
 
