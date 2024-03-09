@@ -72,7 +72,7 @@ function C.extend_palette()
         change0 = U.blend(C.white.default, C.bg, 0.05),
         change1 = U.blend(C.white.default, C.bg, diff_blend),
         add = U.blend(C.green.base, C.bg, diff_blend),
-        delete = U.blend(C.brown4, C.bg, diff_blend),
+        delete = U.blend(C.red.soft, C.bg, diff_blend),
     }
 
     -- Git
