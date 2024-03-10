@@ -14,25 +14,6 @@ local palette = {
     black1 = '#1E222A',
     -- Slightly darker than bg.  Very useful for certain popups
     black2 = '#222630',
-    black = {
-        -- Blacks. Not in base Nord.
-        b0 = '#191D24',
-        b1 = '#1E222A',
-        -- Slightly darker than bg.  Very useful for certain popups
-        b2 = '#222630',
-    },
-    gray = {
-
-    -- Grays
-    -- This color is used on their website's dark theme.
-    g0 = '#242933', -- bg
-    -- Polar Night.
-    g1 = '#2E3440',
-    g2 = '#3B4252',
-    g3 = '#434C5E',
-    g4 = '#4C566A',
-    g5 = '#60728A',
-  },
 
     -- Grays
     -- This color is used on their website's dark theme.
