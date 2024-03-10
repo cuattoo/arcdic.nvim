@@ -1,9 +1,9 @@
 local C = require('arcdic.colors')
 return {
 
-  DiagnosticError = { fg = C.red },
+  DiagnosticError = { fg = C.red.soft },
   DiagnosticWarn = { fg = C.yellow.base },
-  DiagnosticInfo = { fg = C.blue },
+  DiagnosticInfo = { fg = C.blue.b0 },
   DiagnosticHint = { fg = C.green.bright },
   DiagnosticOk = { fg = C.green.base },
   DiagnosticUnderlineError = {sp = C.red.bright },
