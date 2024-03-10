@@ -7,7 +7,7 @@ return {
     LazySpecial = { fg = C.yellow.base },
 
     LazyProgressDone = { fg = C.green.bright },
-    LazyProgressTodo = { fg = C.gray4 },
+    LazyProgressTodo = { fg = C.gray.g4 },
 
     LazyCommitType = { fg = C.yellow.base },
 }
