@@ -4,11 +4,11 @@ local O = require('arcdic.config').options
 local bg
 local fg
 if O.ts_context.dark_background then
-    bg = C.black
-    fg = C.gray2
+    bg = C.black.b0
+    fg = C.gray.b0
 else
-    bg = C.gray2
-    fg = C.gray4
+    bg = C.gray.g2
+    fg = C.gray.g4
 end
 
 return {

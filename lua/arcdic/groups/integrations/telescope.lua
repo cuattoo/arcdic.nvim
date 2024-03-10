@@ -8,7 +8,7 @@ local groups = {
     TelescopePromptNormal = { bg = C.bg },
     TelescopeResultsNormal = { bg = C.bg },
     TelescopePreviewNormal = { bg = C.bg },
-    TelescopePreviewLine = { bg = C.gray2 },
+    TelescopePreviewLine = { bg = C.gray.g2 },
 
     TelescopeSelection = { bg = C.bg, fg = C.yellow.bright, bold = false },
     TelescopeSelectionCaret = { fg = C.yellow.bright, bg = C.bg, bold = true },
