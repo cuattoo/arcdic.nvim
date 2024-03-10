@@ -22,15 +22,16 @@ local palette = {
         b2 = '#222630',
     },
     gray = {
-        -- Grays
-        -- This color is used on their website's dark theme.
-        g0 = '#242933', -- bg
-        -- Polar Night.
-        g1 = '#2E3440',
-        g2 = '#3B4252',
-        g3 = '#434C5E',
-        g4 = '#4C566A',
-    },
+
+    -- Grays
+    -- This color is used on their website's dark theme.
+    gray0 = '#242933', -- bg
+    -- Polar Night.
+    gray1 = '#2E3440',
+    gray2 = '#3B4252',
+    gray3 = '#434C5E',
+    gray4 = '#4C566A',
+  },
 
     -- Grays
     -- This color is used on their website's dark theme.
@@ -73,6 +74,7 @@ local palette = {
     -- These colors are used a lot, so we need variations for them.
     -- Base colors are from original Nord palette.
     purple = {
+      base = '#382810'
     },
     red = {
         base = '#BF616A',
