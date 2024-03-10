@@ -3,7 +3,7 @@ local C = require 'arcdic.colors'
 return {
 
     CmpItemAbbrDeprecated = { fg = C.grey.g4 },
-    CmpItemAbbrMatch = { fg = C.blue.b1, bold = true },
+    CmpItemAbbrMatch = { fg = C.sblue1, bold = true },
     CmpItemAbbrMatchFuzzy = { link = 'CmpItemAbbrMatch' },
 
     CmpItemKindField = { link = '@field' },
@@ -25,10 +25,10 @@ return {
     CmpItemKindOperator = { link = 'Operator' },
 
     CmpItemKindVariable = { fg = C.cyan.base },
-    CmpItemKindFile = { fg = C.blue.b1 },
+    CmpItemKindFile = { fg = C.sblue1 },
 
     CmpItemKindUnit = { link = 'Constant' },
-    CmpItemKindSnippet = { fg = C.blue.b1 },
+    CmpItemKindSnippet = { fg = C.sblue1 },
     CmpItemKindFolder = { fg = C.yellow.dark },
 
     CmpItemKindMethod = { link = 'Function' },
