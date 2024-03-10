@@ -1,0 +1,32 @@
+local C = require('arcdic.colors')
+return {
+
+  DiagnosticError = { fg = C.red },
+  DiagnosticWarn = { fg = C.yellow.base },
+  DiagnosticInfo = { fg = C.blue },
+  DiagnosticHint = { fg = C.green.bright },
+  DiagnosticOk = { fg = C.green.base },
+  DiagnosticUnderlineError = {sp = C.red.bright },
+  DiagnosticUnderlineWarn = {sp = C.yellow.base },
+  DiagnosticUnderlineInfo = {sp = C.blue.base },
+  DiagnosticUnderlineHint = {sp = C.cyan.bright },
+  DiagnosticUnderlineOk = {sp = C.green.base },
+  -- DiagnosticVirtualTextError = {},
+  -- DiagnosticVirtualTextWarn = {},
+  -- DiagnosticVirtualTextInfo = {},
+  -- DiagnosticVirtualTextHint = {},
+  -- DiagnosticVirtualTextOk = {},
+  -- DiagnosticFloatingError = {},
+  -- DiagnosticFloatingWarn = {},
+  -- DiagnosticFloatingInfo = {},
+  -- DiagnosticFloatingHint = {},
+  -- DiagnosticFloatingOk = {},
+  -- DiagnosticSignError = {},
+  -- DiagnosticSignWarn = {},
+  -- DiagnosticSignInfo = {},
+  -- DiagnosticSignHint = {},
+  -- DiagnosticSignOk = {},
+
+  DiagnosticDeprecated = { 'DiagnosticUnderlineError' },
+  DiagnosticUnnecessary = { fg = C.black0 },
+}
