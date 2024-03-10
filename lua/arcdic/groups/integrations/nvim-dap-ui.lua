@@ -2,15 +2,15 @@ local C = require 'arcdic.colors'
 
 return {
 
-    DapUINormal = { bg = C.black.b1 },
+    DapUINormal = { bg = C.black1 },
 
     DapUIStop = { fg = C.red.bright, bold = true },
     DapUIRestart = { fg = C.green.bright, bold = true },
     DapUIPlayPause = { fg = C.green.bright, bold = true },
-    DapUIStepInto = { fg = C.blue.b2, bold = true },
-    DapUIStepOver = { fg = C.blue.b2, bold = true },
-    DapUIStepOut = { fg = C.blue.b2, bold = true },
-    DapUIStepBack = { fg = C.blue.b3, bold = true },
+    DapUIStepInto = { fg = C.blue2, bold = true },
+    DapUIStepOver = { fg = C.blue2, bold = true },
+    DapUIStepOut = { fg = C.blue2, bold = true },
+    DapUIStepBack = { fg = C.blue3, bold = true },
 
     DapUIValue = { fg = C.magenta.bright },
     DapUIWatchesValue = { fg = C.green.bright },
