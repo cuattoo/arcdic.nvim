@@ -7,7 +7,7 @@ local U = require('arcdic.utils')
 local groups = {
     Comment = { fg = C.comment, italic = O.italic_comments }, -- any comment
     ColorColumn = { bg = C.bg_visual }, -- used for the columns set with 'colorcolumn'
-    Conceal = { fg = C.gray3 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
+    Conceal = { fg = C.gray.g3 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
 
     Cursor = { fg = C.bg, bg = C.fg }, -- character under the cursor
     lCursor = { fg = C.bg }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')

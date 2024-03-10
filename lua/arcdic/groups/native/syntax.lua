@@ -25,10 +25,10 @@ return {
 
     Builtin = { fg = C.red.rust},
 
-    Identifier = { fg = C.blue2 }, -- (preferred) any variable name
+    Identifier = { fg = C.blue.b2 }, -- (preferred) any variable name
     Function = { fg = C.magenta.bright }, -- function name (also: methods for classes)
 
-    Keyword = { fg = C.blue2, bold = O.bold_keywords }, --  any other keyword
+    Keyword = { fg = C.blue.b2, bold = O.bold_keywords }, --  any other keyword
     Statement = { link = 'Keyword' }, -- (preferred) any statement
     Conditional = { link = 'Keyword' }, --  if, then, else, endif, switch, etc.
     Repeat = { link = 'Keyword' }, --   for, do, while, etc.
@@ -42,14 +42,14 @@ return {
     Define = { fg = C.purple.base }, --   preprocessor #define
     PreCondit = { link = 'Macro' }, --  preprocessor #if, #else, #endif, etc.
 
-    Comment = { fg = C.gray4, italic = O.italic_comments },
+    Comment = { fg = C.gray.g4, italic = O.italic_comments },
 
     Type = { fg = C.yellow.base }, -- (preferred) int, long, char, etc.
     StorageClass = { link = 'Keyword' }, -- static, register, volatile, etc.
     Structure = { link = 'Type' }, --  struct, union, enum, etc.
     Typedef = { link = 'Type' }, --  A typedef
 
-    Special = { fg = C.blue1 }, -- (preferred) any special symbol
+    Special = { fg = C.blue.b1 }, -- (preferred) any special symbol
     -- SpecialChar   = { }, --  special character in a constant
     -- Tag           = { }, --    you can use CTRL-] on this
     -- Delimiter     = { }, --  character that needs attention
@@ -61,21 +61,21 @@ return {
     Italic = { italic = true },
 
     -- ("Ignore", below, may be invisible...)
-    Ignore = { fg = C.gray2 }, -- (preferred) left blank, hidden  |hl-Ignore|
+    Ignore = { fg = C.gray.g2 }, -- (preferred) left blank, hidden  |hl-Ignore|
 
     Error = { fg = C.error }, -- (preferred) any erroneous construct
-    Todo = { bg = C.yellow.dim, fg = C.black0 }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-    Note = { fg = C.black0, bg = C.info },
+    Todo = { bg = C.yellow.dim, fg = C.black.b0 }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Note = { fg = C.black.b0, bg = C.info },
 
     -- What are these?
-    qfLineNr = { fg = C.gray4 },
-    qfFileName = { fg = C.blue1 },
+    qfLineNr = { fg = C.gray.g4 },
+    qfFileName = { fg = C.blue.b1 },
 
     htmlH1 = { fg = C.yellow.base, bold = true },
     htmlH2 = { fg = C.orange.base },
 
-    Link = { fg = C.blue1, underline = true },
-    CodeBlock = { bg = C.black1, fg = C.fg },
+    Link = { fg = C.blue.b1, underline = true },
+    CodeBlock = { bg = C.black.b1, fg = C.fg },
 
     mkdHeading = { link = 'htmlH1' },
     mkdCode = { link = 'CodeBlock' },
@@ -92,11 +92,11 @@ return {
     markdownLinkText = { link = 'Link' },
 
     ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true },
-    ['@text.todo.unchecked'] = { fg = C.blue1 }, -- For brackets and parens.
+    ['@text.todo.unchecked'] = { fg = C.blue.b1 }, -- For brackets and parens.
     ['@text.todo.checked'] = { fg = C.green.base }, -- For brackets and parens.
-    ['@text.literal.markdown_inline'] = { bg = C.black0, fg = C.blue1 },
+    ['@text.literal.markdown_inline'] = { bg = C.black.b0, fg = C.blue.b1 },
     ['@text.literal.markdown'] = { link = 'Normal' },
-    ['helpCommand'] = { bg = C.black0, fg = C.blue1 },
+    ['helpCommand'] = { bg = C.black.b0, fg = C.blue.b1 },
 
     debugPC = { bg = C.bg_sidebar }, -- used for highlighting the current line in terminal-debug
     debugBreakpoint = { fg = C.red.bright }, -- used for breakpoint colors in terminal-debug
