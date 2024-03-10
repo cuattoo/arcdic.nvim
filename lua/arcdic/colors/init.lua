@@ -22,8 +22,8 @@ function C.extend_palette()
     -- Some of the format is from @folke/tokyonight.nvim.
 
     -- Backgrounds
-    C.bg = (O.transparent_bg and C.none) or C.orange.soft
-    C.bg_dark = (O.transparent_bg and C.none) or C.orange.soft
+    C.bg = (O.transparent_bg and C.none) or C.base.bg
+    C.bg_dark = (O.transparent_bg and C.none) or C.taupe
     C.bg_highlight = (O.transparent_bg and C.xterm.grey) or U.blend(C.magenta.bright, C.blue2, O.cursorline.blend)
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg

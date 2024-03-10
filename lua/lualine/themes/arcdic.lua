@@ -39,7 +39,7 @@ arcdic.terminal = {
 }
 
 arcdic.inactive = {
-    a = { bg = C.gray.g2, fg = C.black.b0, gui = 'bold' },
+    a = { bg = C.bg_t, fg = C.black.b0, gui = 'bold' },
     b = { bg = C.gray.g2, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }

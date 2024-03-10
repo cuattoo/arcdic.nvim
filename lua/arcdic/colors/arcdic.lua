@@ -48,7 +48,7 @@ local palette = {
         snow3 = '#ECEFF4',
     },
   blue = {
-    base = '#40a2cc',
+    base = '#90ccf9',
 
     -- Frost.
     b0 = '#5E81AC',

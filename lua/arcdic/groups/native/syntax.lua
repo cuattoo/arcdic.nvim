@@ -15,7 +15,7 @@ return {
     Boolean = { link = 'Number' }, --  a boolean constant: TRUE, false
     Float = { link = 'Number' }, --    a floating point constant: 2.3e10
     None = { fg = C.none, bg = C.none },
-    String = { fg = C.green.dim }, --   a string constant: "this is a string"
+    String = { fg = C.blue.base }, --   a string constant: "this is a string"
     Character = { fg = C.green.base }, --  a character constant: 'c', '\n'
     Variable = { fg = C.fg },
     Namespace = { fg = C.yellow.dim },
@@ -38,8 +38,8 @@ return {
     Macro = { fg = C.yellow.base }, -- same as Define
     Exception = { link = 'Macro' }, --  try, catch, throw
     PreProc = { link = 'Macro' }, -- (preferred) generic preprocessor
-    Include = { fg = C.purple.base }, --  preprocessor #include
-    Define = { fg = C.purple.base }, --   preprocessor #define
+    Include = { fg = C.blue.base }, --  preprocessor #include
+    Define = { fg = C.blue.base }, --   preprocessor #define
     PreCondit = { link = 'Macro' }, --  preprocessor #if, #else, #endif, etc.
 
     Comment = { fg = C.gray.g4, italic = O.italic_comments },
