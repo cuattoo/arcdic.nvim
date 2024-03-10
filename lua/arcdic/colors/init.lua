@@ -38,7 +38,7 @@ function C.extend_palette()
     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
     C.bg_popup = (O.transparent_bg and C.none) or C.bg
     C.bg_statusline = C.bg_dark
-    C.bg_selected = U.blend(C.gray2, C.black0, 0.4)
+    C.bg_selected = U.blend(C.gray2, C.black.b0, 0.4)
     C.bg_fold = C.gray2
 
     -- Borders

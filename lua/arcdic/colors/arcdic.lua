@@ -14,6 +14,9 @@ local palette = {
     black1 = '#1E222A',
     -- Slightly darker than bg.  Very useful for certain popups
     black2 = '#222630',
+  black = {
+    b0 = '#191D24'
+  },
 
     -- Grays
     -- This color is used on their website's dark theme.
