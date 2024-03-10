@@ -15,7 +15,7 @@ return {
 
     --- Punctuation
     ['@punctuation.delimiter'] = { link = '@operator' }, -- For delimiters ie: `.`
-    ['@punctuation.bracket'] = { fg = C.grey5}, -- For brackets and parens.
+    ['@punctuation.bracket'] = { fg = C.gray.g5}, -- For brackets and parens.
     ['@punctuation.special'] = { link = '@operator' }, -- For special punctutation that does not fall in the catagories before.
     ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true },
 
@@ -25,7 +25,7 @@ return {
     ['@string.escape'] = { fg = C.magenta.bright }, -- For escape characters within a string.
 
     --- Functions
-    ['@constructor'] = { fg = C.gray5 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    ['@constructor'] = { fg = C.gray.g5 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
     ['@parameter'] = { fg = C.fg, italic = true }, -- For parameters of a function.
     ['@parameter.builtin'] = { link = 'Builtin' }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
@@ -47,9 +47,9 @@ return {
     --- Text
     --['@spell'] = {},
     -- ["@text.literal.markdown"] = { },
-    ['@text.literal.markdown_inline'] = { bg = C.black2, fg = C.fg },
+    ['@text.literal.markdown_inline'] = { bg = C.black.b2, fg = C.fg },
     ['@text.reference'] = { link = 'Link' },
-    ['@text.todo.unchecked'] = { fg = C.blue1 }, -- For brackets and parens.
+    ['@text.todo.unchecked'] = { fg = C.blue.b1 }, -- For brackets and parens.
     ['@text.todo.checked'] = { fg = C.green.bright }, -- For brackets and parens.
     ['@text.warning'] = { fg = C.warning },
     ['@text.danger'] = { fg = C.error },
@@ -57,9 +57,9 @@ return {
     ['@text.diff.delete'] = { link = 'DiffDelete' },
 
     -- TSX
-    ['@tag.tsx'] = { fg = C.blue1 },
-    ['@constructor.tsx'] = { fg = C.blue1 },
-    ['@tag.delimiter.tsx'] = { fg = C.blue1 },
+    ['@tag.tsx'] = { fg = C.blue.base },
+    ['@constructor.tsx'] = { fg = C.blue.base },
+    ['@tag.delimiter.tsx'] = { fg = C.blue.base },
 
     --LSP Semantic Token Groups
     ['@lsp.type.boolean'] = { link = 'Boolean' },
