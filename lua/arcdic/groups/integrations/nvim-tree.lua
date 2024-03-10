@@ -13,10 +13,10 @@ return {
     NvimTreeSpecialFile = { link = 'NvimTreeFolderName' },
 
     NvimTreeRootFolder = { fg = C.gray4 },
-    NvimTreeGitDirty = { fg = C.purple.base },
-    NvimTreeGitNew = { fg = C.purple.base },
-    NvimTreeGitDeleted = { fg = C.purple.base },
-    NvimTreeGitStaged = { fg = C.purple.base },
+    NvimTreeGitDirty = { fg = C.gray.g4 },
+    NvimTreeGitNew = { fg = C.gray.g4 },
+    NvimTreeGitDeleted = { fg = C.gray.g4 },
+    NvimTreeGitStaged = { fg = C.gray.g4 },
     NvimTreeIndentMarker = { fg = C.base.bg, bg = C.none },
 
     NvimTreeWinSeparator = { fg = C.bg_dark, bg = C.bg },
