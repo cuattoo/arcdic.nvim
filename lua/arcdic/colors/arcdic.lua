@@ -9,12 +9,8 @@ local palette = {
         bg = '#898989',
     },
     none = 'NONE',
-    -- Blacks. Not in base Nord.
-    black0 = '#191D24',
-    black1 = '#1E222A',
-    -- Slightly darker than bg.  Very useful for certain popups
-    black2 = '#222630',
   black = {
+    -- Blacks. Not in base Nord.
     b0 = '#191D24',
     b1 = '#1E222A',
     -- Slightly darker than bg.  Very useful for certain popups
@@ -36,21 +32,12 @@ local palette = {
     g5 = '#60728A',
     -- Dim white.
     },
-    gray0 = '#242933', -- bg
-    -- Polar Night.
-    gray1 = '#2E3440',
-    gray2 = '#3B4252',
-    gray3 = '#434C5E',
-    gray4 = '#4C566A',
 
 
-        taupe = '#7F7F7F',
-        fawn = '#A3A3A3',
-        mocha = '#B5B5B5',
-        latte = '#C7C7C7',
-    -- A light blue/gray.
-    -- From @nightfox.nvim.
-    gray5 = '#60728A',
+    taupe = '#7F7F7F',
+    fawn = '#A3A3A3',
+    mocha = '#B5B5B5',
+    latte = '#C7C7C7',
     -- Dim white.
     white = {
         default = '#BBC3D4',
@@ -60,7 +47,7 @@ local palette = {
         snow2 = '#E5E9F0',
         snow3 = '#ECEFF4',
     },
-   blue = {
+  blue = {
     base = '#40a2cc',
 
     -- Frost.
@@ -69,12 +56,6 @@ local palette = {
     b2 = '#88C0D0',
     b4 = '#d1f2f7',
   },
-    -- Frost.
-    blue0 = '#5E81AC',
-    blue1 = '#81A1C1',
-    blue2 = '#88C0D0',
-    blue4 = '#d1f2f7',
-
     cyan = {
         base = '#8FBCBB',
         bright = '#9FC6C5',
