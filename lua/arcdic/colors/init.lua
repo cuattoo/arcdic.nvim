@@ -19,6 +19,12 @@ function C.extend_palette()
     C.grey.g3 = C.gray.g3
     C.grey.g4 = C.gray.g4
     C.grey.g5 = C.gray.g5
+    C.grey0 = C.gray0
+    C.grey1 = C.gray1
+    C.grey2 = C.gray2
+    C.grey3 = C.gray3
+    C.grey4 = C.gray4
+    C.grey5 = C.gray5
 
     -- Swap background
     if O.swap_backgrounds then
