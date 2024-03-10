@@ -2,7 +2,7 @@ local C = require 'arcdic.colors'
 
 return {
 
-    CmpItemAbbrDeprecated = { fg = C.grey.g4 },
+    CmpItemAbbrDeprecated = { fg = C.grey4 },
     CmpItemAbbrMatch = { fg = C.sblue1, bold = true },
     CmpItemAbbrMatchFuzzy = { link = 'CmpItemAbbrMatch' },
 
@@ -10,7 +10,7 @@ return {
     CmpItemKindProperty = { link = '@proprty' },
     CmpItemKindEvent = { link = 'Type' },
 
-    CmpItemKindText = { fg = C.grey.g4 },
+    CmpItemKindText = { fg = C.grey4 },
     CmpItemKindEnum = { link = 'Type' },
     CmpItemKindKeyword = { link = 'Keyword' },
 
