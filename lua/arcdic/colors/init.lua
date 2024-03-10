@@ -12,19 +12,10 @@ function C.extend_palette()
 
     local diff_blend = 0.2
 
-    -- Add these for international convenience :)
-    C.grey0 = C.gray0
-    C.grey1 = C.gray1
-    C.grey2 = C.gray2
-    C.grey3 = C.gray3
-    C.grey4 = C.gray4
-    C.grey5 = C.gray5
-
     -- Swap background
     if O.swap_backgrounds then
-        local gray0 = C.gray0
-        C.gray0 = C.black1
-        C.black1 = gray0
+        C.gray.g0 = C.black1
+        C.black.b1 = C.gray.g0
     end
 
     -- Define some use cases.
@@ -38,11 +29,11 @@ function C.extend_palette()
     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
     C.bg_popup = (O.transparent_bg and C.none) or C.bg
     C.bg_statusline = C.bg_dark
-    C.bg_selected = U.blend(C.gray2, C.black.b0, 0.4)
-    C.bg_fold = C.gray2
+    C.bg_selected = U.blend(C.gray.g2, C.black.b0, 0.4)
+    C.bg_fold = C.gray.g2
 
     -- Borders
-    C.border_fg = (O.transparent_bg and not O.bright_border and C.base.bg) or (O.bright_border and C.fg_hightlight) or C.grey3
+    C.border_fg = (O.transparent_bg and not O.bright_border and C.base.bg) or (O.bright_border and C.fg_hightlight) or C.gray.g3
     C.border_bg = (O.transparent_bg and C.none) or C.bg
 
     -- Foregrounds
@@ -87,11 +78,11 @@ function C.extend_palette()
     C.warn = C.yellow.base
     C.warning = C.warn
     C.hint = C.green.bright
-    C.info = C.blue2
+    C.info = C.blue.b2
 
     -- Cursorline
     if O.cursorline.theme == 'light' then
-        C.bg_highlight = U.blend(C.gray1, C.bg, O.cursorline.blend)
+        C.bg_highlight = U.blend(C.gray.g1, C.bg, O.cursorline.blend)
         C.bg_visual = C.bg_highlight
     end
 end
