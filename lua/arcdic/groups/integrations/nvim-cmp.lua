@@ -2,15 +2,15 @@ local C = require 'arcdic.colors'
 
 return {
 
-    CmpItemAbbrDeprecated = { fg = C.grey.g4 },
-    CmpItemAbbrMatch = { fg = C.blue.base , bold = true },
+    CmpItemAbbrDeprecated = { fg = C.grey4 },
+    CmpItemAbbrMatch = { fg = C.sblue1, bold = true },
     CmpItemAbbrMatchFuzzy = { link = 'CmpItemAbbrMatch' },
 
     CmpItemKindField = { link = '@field' },
     CmpItemKindProperty = { link = '@proprty' },
     CmpItemKindEvent = { link = 'Type' },
 
-    CmpItemKindText = { fg = C.grey.g4 },
+    CmpItemKindText = { fg = C.grey4 },
     CmpItemKindEnum = { link = 'Type' },
     CmpItemKindKeyword = { link = 'Keyword' },
 
@@ -28,7 +28,7 @@ return {
     CmpItemKindFile = { fg = C.sblue1 },
 
     CmpItemKindUnit = { link = 'Constant' },
-    CmpItemKindSnippet = { fg = C.blue.base },
+    CmpItemKindSnippet = { fg = C.sblue1 },
     CmpItemKindFolder = { fg = C.yellow.dark },
 
     CmpItemKindMethod = { link = 'Function' },
