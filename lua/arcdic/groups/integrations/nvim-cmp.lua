@@ -28,7 +28,7 @@ return {
     CmpItemKindFile = { fg = C.blue.base },
 
     CmpItemKindUnit = { link = 'Constant' },
-    CmpItemKindSnippet = { fg = C.blublue.base },
+    CmpItemKindSnippet = { fg = C.blue.base },
     CmpItemKindFolder = { fg = C.yellow.dark },
 
     CmpItemKindMethod = { link = 'Function' },
