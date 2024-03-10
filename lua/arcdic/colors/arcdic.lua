@@ -15,11 +15,27 @@ local palette = {
     -- Slightly darker than bg.  Very useful for certain popups
     black2 = '#222630',
   black = {
-    b0 = '#191D24'
+    b0 = '#191D24',
+    b1 = '#1E222A',
+    -- Slightly darker than bg.  Very useful for certain popups
+    b2 = '#222630',
   },
 
     -- Grays
     -- This color is used on their website's dark theme.
+  gray = {
+
+    g0 = '#242933', -- bg
+    -- Polar Night.
+    g1 = '#2E3440',
+    g2 = '#3B4252',
+    g3 = '#434C5E',
+    g4 = '#4C566A',
+    -- A light blue/gray.
+    -- From @nightfox.nvim.
+    g5 = '#60728A',
+    -- Dim white.
+    },
     gray0 = '#242933', -- bg
     -- Polar Night.
     gray1 = '#2E3440',
