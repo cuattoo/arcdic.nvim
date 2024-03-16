@@ -18,11 +18,11 @@ local palette = {
   },
 
     -- Grays
-    -- This color is used on their website's dark theme.
+    -- This color is used on their website's dark theme
   gray = {
 
     g0 = '#242933', -- bg
-    -- Polar Night.
+    -- Polar Night
     g1 = '#2E3440',
     g2 = '#3B4252',
     g3 = '#434C5E',
@@ -30,7 +30,6 @@ local palette = {
     -- A light blue/gray.
     -- From @nightfox.nvim.
     g5 = '#60728A',
-    -- Dim white.
     },
 
 
@@ -38,7 +37,7 @@ local palette = {
     fawn = '#A3A3A3',
     mocha = '#B5B5B5',
     latte = '#C7C7C7',
-    -- Dim white.
+    -- Dim white
     white = {
         default = '#BBC3D4',
         antique = '#fbf1ed',
@@ -48,9 +47,9 @@ local palette = {
         snow3 = '#ECEFF4',
     },
   blue = {
-    base = '#90ccf9',
+    base = '#30b0fe',
 
-    -- Frost.
+    -- Frost
     b0 = '#5E81AC',
     b1 = '#81A1C1',
     b2 = '#88C0D0',
@@ -61,16 +60,13 @@ local palette = {
         bright = '#9FC6C5',
         dim = '#80B3B2',
     },
-    -- Aurora.
-    -- These colors are used a lot, so we need variations for them.
-    -- Base colors are from original Nord palette.
-    purple = {
-      base = '#382810'
-    },
+    -- Aurora
+    -- These colors are used a lot, so we need variations for them
+    -- Base colors are from original Nord palette
     red = {
         base = '#BF616A',
         bright = '#C5727A',
-        soft = '#eebebe',
+        soft = '#eebebe', -- added
         dim = '#B74E58',
     },
     orange = {

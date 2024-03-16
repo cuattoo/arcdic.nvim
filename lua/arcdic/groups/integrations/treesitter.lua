@@ -15,25 +15,25 @@ return {
 
     --- Punctuation
     ['@punctuation.delimiter'] = { link = '@operator' }, -- For delimiters ie: `.`
-    ['@punctuation.bracket'] = { fg = C.gray.g5}, -- For brackets and parens.
-    ['@punctuation.special'] = { link = '@operator' }, -- For special punctutation that does not fall in the catagories before.
+    ['@punctuation.bracket'] = { fg = C.gray.g5 },       -- For brackets and parens.
+    ['@punctuation.special'] = { link = '@operator' },   -- For special punctutation that does not fall in the catagories before.
     ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true },
 
     --- Literals
     ['@string.documentation'] = { link = 'String' },
-    ['@string.regex'] = { fg = C.magenta.bright }, -- For regexes.
+    ['@string.regex'] = { fg = C.magenta.bright },  -- For regexes.
     ['@string.escape'] = { fg = C.magenta.bright }, -- For escape characters within a string.
 
     --- Functions
-    ['@constructor'] = { fg = C.gray.g5 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    ['@constructor'] = { fg = C.gray.g5 },         -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
     ['@parameter'] = { fg = C.fg, italic = true }, -- For parameters of a function.
     ['@parameter.builtin'] = { link = 'Builtin' }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
     --- Keywords
-    ['@keyword'] = { link = 'Keyword' }, -- For keywords that don't fall in previous categories.
-    ['@keyword.coroutine'] = { link = 'Macro' }, -- For keywords related to coroutines.
+    ['@keyword'] = { link = 'Keyword' },          -- For keywords that don't fall in previous categories.
+    ['@keyword.coroutine'] = { link = 'Macro' },  -- For keywords related to coroutines.
     ['@keyword.function'] = { link = 'Keyword' }, -- For keywords used to define a fuction.
-    ['@label'] = { link = 'Keyword' }, -- For labels: `label:` in C and `:label:` in Lua.
+    ['@label'] = { link = 'Keyword' },            -- For labels: `label:` in C and `:label:` in Lua.
 
     --- Types
     ['@type.builtin'] = { link = 'Type' },
@@ -41,7 +41,7 @@ return {
     ['@property'] = { fg = C.white.default },
 
     --- Identifiers
-    ['@variable'] = { link = 'Variable' }, -- Any variable name that does not have another highlight.
+    ['@variable'] = { link = 'Variable' },        -- Any variable name that does not have another highlight.
     ['@variable.builtin'] = { link = 'Builtin' }, -- Variable names that are defined by the languages, like `this` or `self`.
 
     --- Text
@@ -49,7 +49,7 @@ return {
     -- ["@text.literal.markdown"] = { },
     ['@text.literal.markdown_inline'] = { bg = C.black.b2, fg = C.fg },
     ['@text.reference'] = { link = 'Link' },
-    ['@text.todo.unchecked'] = { fg = C.blue.b1 }, -- For brackets and parens.
+    ['@text.todo.unchecked'] = { fg = C.blue.b1 },    -- For brackets and parens.
     ['@text.todo.checked'] = { fg = C.green.bright }, -- For brackets and parens.
     ['@text.warning'] = { fg = C.warning },
     ['@text.danger'] = { fg = C.error },
@@ -80,7 +80,7 @@ return {
     ['@lsp.type.string.rust'] = { link = 'String' },
     ['@lsp.type.typeAlias'] = { link = 'Type' },
     ['@lsp.type.unresolvedReference'] = {},
-    ['@lsp.type.variable'] = { link = 'Function'}, -- use treesitter styles for regular variables
+    ['@lsp.type.variable'] = { link = 'Function' }, -- use treesitter styles for regular variables
     ['@lsp.typemod.class.defaultLibrary'] = { link = 'Type' },
     ['@lsp.typemod.enum.defaultLibrary'] = { link = 'Type' },
     ['@lsp.typemod.enumMember.defaultLibrary'] = { link = 'Constant' },
@@ -99,16 +99,16 @@ return {
     ['@text.todo'] = { link = 'Todo' },
     ['@text.note'] = { link = 'Note' },
     ['@string.special'] = { fg = C.yellow.base }, -- For escape characters within a string.
-    ['@tag'] = { fg = C.blue1 }, -- Tags like html tag names.
-    ['@tag.delimiter'] = { fg = C.fg }, -- Tag delimiter like `<` `>` `/`
-    ['@tag.attribute'] = { fg = C.yellow.base }, -- Tag attribute like `id` `class`
-    ['@text'] = { link = 'Normal' }, -- For strings considered text in a markup language.
+    ['@tag'] = { fg = C.blue1 },                  -- Tags like html tag names.
+    ['@tag.delimiter'] = { fg = C.fg },           -- Tag delimiter like `<` `>` `/`
+    ['@tag.attribute'] = { fg = C.yellow.base },  -- Tag attribute like `id` `class`
+    ['@text'] = { link = 'Normal' },              -- For strings considered text in a markup language.
     ['@text.strong'] = { bold = true },
-    ['@text.emphasis'] = { italic = true }, -- For text to be represented with emphasis.
-    ['@text.underline'] = { underline = true }, -- For text to be represented with an underline.
-    ['@text.strike'] = { strikethrough = true }, -- For strikethrough text.
-    ['@text.title'] = { link = 'Title' }, -- Text that is part of a title.
-    ['@text.uri'] = { underline = true }, -- Any URI like a link or email.
+    ['@text.emphasis'] = { italic = true },       -- For text to be represented with emphasis.
+    ['@text.underline'] = { underline = true },   -- For text to be represented with an underline.
+    ['@text.strike'] = { strikethrough = true },  -- For strikethrough text.
+    ['@text.title'] = { link = 'Title' },         -- Text that is part of a title.
+    ['@text.uri'] = { underline = true },         -- Any URI like a link or email.
     ['@text.literal'] = { link = 'String' },
     ['@constant'] = { link = 'Constant' },
     ['@number'] = { link = 'Constant' },
